@@ -1,0 +1,49 @@
+@import 'variables';
+
+@mixin bp($width, $height: null) {
+  @if ($width and $height) {
+    @media (min-height: $height) and (min-width: $width) {
+      @content;
+    }
+  } @else if $width {
+    @media (min-width: $width) {
+      @content;
+    }
+  } @else {
+    @media (min-height: $height) {
+      @content;
+    }
+  }
+}
+
+@mixin placeholder() {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+
+  &::-moz-placeholder {
+    @content;
+  }
+
+  &:-ms-input-placeholder {
+    @content;
+  }
+
+  &::placeholder {
+    @content;
+  }
+}
+
+@mixin scrollbar() {
+  scrollbar-color: #888;
+  scrollbar-width: 0.4rem;
+
+  &::-webkit-scrollbar {
+    height: 0.4rem;
+    width: 0.4rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #888;
+  }
+}

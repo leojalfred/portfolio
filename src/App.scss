@@ -1,0 +1,90 @@
+@import 'styles/variables';
+
+.main {
+  margin: 6rem auto 0 auto;
+  max-width: 100rem;
+  padding: 0 6rem;
+}
+
+.navbar {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  left: 6rem;
+  margin: 0 auto;
+  max-width: 100rem;
+  padding: 2rem 0;
+  position: fixed;
+  right: 6rem;
+  top: 0;
+
+  &__links {
+    display: flex;
+    flex: 1;
+  }
+
+  &__link-item,
+  &__social-item {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    font-size: 1.25rem;
+    transition: color 0.2s;
+
+    &:hover {
+      color: $violet;
+    }
+  }
+
+  &__link-item {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    font-family: $halant;
+    margin-right: 2rem;
+    position: relative;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &::before {
+      background-color: $violet;
+      bottom: 0rem;
+      content: '';
+      height: 0.1rem;
+      position: absolute;
+      transform: scaleY(0);
+      transition: transform 0.2s;
+      width: 100%;
+    }
+
+    &:hover::before {
+      visibility: visible;
+      transform: scaleY(1);
+    }
+  }
+
+  &__home {
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+    width: 2rem;
+  }
+
+  &__socials {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+  }
+
+  &__social-item {
+    color: white;
+    margin-left: 2rem;
+    text-decoration: none;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
