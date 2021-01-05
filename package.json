@@ -1,0 +1,41 @@
+{
+  "author": "Leo Alfred <leojalfred@gmail.com> (http://leojalfred.com/)",
+  "browserslist": {
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ],
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ]
+  },
+  "dependencies": {
+    "node-sass": "4.14.1",
+    "normalize.css": "^8.0.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.1",
+    "web-vitals": "^0.2.4"
+  },
+  "description": "Leo Alfred's personal portfolio website",
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "es6": true
+    },
+    "extends": [
+      "react-app"
+    ]
+  },
+  "license": "UNLICENSED",
+  "name": "portfolio",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  },
+  "version": "0.0.0"
+}
