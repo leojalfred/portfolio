@@ -1,0 +1,104 @@
+@import 'styles/mixins';
+
+.banner {
+  display: flex;
+  margin-bottom: 4rem;
+  padding-top: 2rem;
+
+  &__text {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__heading {
+    font-size: 5.5rem;
+    margin: 0;
+  }
+
+  &__tech {
+    display: grid;
+    gap: 2rem;
+    grid-template: repeat(4, 1fr) / repeat(9, 1fr);
+  }
+
+  &__square {
+    align-items: center;
+    border-radius: 1rem;
+    display: flex;
+    font-size: 2rem;
+    grid-column-start: span 2;
+    height: 6rem;
+    justify-content: center;
+    width: 6rem;
+
+    &:nth-child(1) {
+      @include dg($cyan, $lime);
+    }
+
+    &:nth-child(2) {
+      @include dg($orange, $pink);
+    }
+
+    &:nth-child(3) {
+      @include dg($yellow, $orange);
+    }
+
+    &:nth-child(4) {
+      @include dg($red, $grape);
+    }
+
+    &:nth-child(5) {
+      @include dg($grape, $red);
+    }
+
+    &:nth-child(6) {
+      @include dg($violet, $cyan);
+    }
+
+    &:nth-child(7) {
+      @include dg($green, $yellow);
+    }
+
+    &:nth-child(8) {
+      @include dg($pink, $orange);
+    }
+
+    &:nth-child(9) {
+      @include dg($teal, $blue);
+    }
+
+    &:nth-child(10) {
+      @include dg($yellow, $green);
+    }
+
+    &:nth-child(11) {
+      @include dg($red, $yellow);
+    }
+
+    &:nth-child(12) {
+      @include dg($cyan, $indigo);
+    }
+
+    &:nth-child(13) {
+      @include dg($grape, $yellow);
+    }
+
+    &:nth-child(14) {
+      @include dg($gray, $blue);
+    }
+
+    &:nth-child(15) {
+      @include dg($pink, $indigo);
+    }
+
+    &:nth-child(16) {
+      @include dg($lime, $teal);
+    }
+
+    &:nth-child(8n + 5) {
+      grid-column: 2 / 4;
+    }
+  }
+}

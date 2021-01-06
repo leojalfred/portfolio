@@ -1,0 +1,22 @@
+@import 'styles/variables';
+
+.bio {
+  display: flex;
+  margin-bottom: 4rem;
+
+  &__image-container {
+    border-radius: 1rem;
+    margin-right: 4rem;
+  }
+
+  &__image {
+    border-radius: 1rem;
+    width: 20rem;
+  }
+
+  &__text {
+    background-color: $dark-gray;
+    border-radius: 2rem;
+    padding: 4rem;
+  }
+}
