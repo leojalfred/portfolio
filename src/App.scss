@@ -1,21 +1,15 @@
-@import 'styles/variables';
-
-.main {
-  margin: 6rem auto 0 auto;
-  max-width: 100rem;
-  padding: 0 6rem;
-}
+@import 'styles/mixins';
 
 .navbar {
   background-color: black;
   display: flex;
   justify-content: space-between;
-  left: 6rem;
+  left: 0;
   margin: 0 auto;
   max-width: 100rem;
-  padding: 2rem 0;
+  padding: 2rem 6rem;
   position: fixed;
-  right: 6rem;
+  right: 0;
   top: 0;
 
   &__links {
@@ -32,7 +26,7 @@
     transition: color 0.2s;
 
     &:hover {
-      color: $violet;
+      color: $pink;
     }
   }
 
@@ -49,7 +43,7 @@
     }
 
     &::before {
-      background-color: $violet;
+      background-color: $pink;
       bottom: 0rem;
       content: '';
       height: 0.1rem;
@@ -86,5 +80,144 @@
     &:first-child {
       margin-left: 0;
     }
+  }
+}
+
+.main {
+  margin: 6rem auto 0 auto;
+  max-width: 100rem;
+  padding: 0 6rem;
+}
+
+.banner {
+  display: flex;
+  margin-bottom: 4rem;
+  padding-top: 2rem;
+
+  &__text {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__heading {
+    font-size: 5.5rem;
+    margin: 0;
+  }
+
+  &__tech {
+    display: grid;
+    gap: 2rem;
+    grid-template: repeat(4, 1fr) / repeat(9, 1fr);
+  }
+
+  &__square {
+    align-items: center;
+    border-radius: 1rem;
+    display: flex;
+    font-size: 2rem;
+    grid-column-start: span 2;
+    height: 6rem;
+    justify-content: center;
+    width: 6rem;
+
+    &:nth-child(1) {
+      @include dg($cyan, $lime);
+    }
+
+    &:nth-child(2) {
+      @include dg($orange, $pink);
+    }
+
+    &:nth-child(3) {
+      @include dg($yellow, $orange);
+    }
+
+    &:nth-child(4) {
+      @include dg($red, $grape);
+    }
+
+    &:nth-child(5) {
+      @include dg($grape, $red);
+    }
+
+    &:nth-child(6) {
+      @include dg($violet, $cyan);
+    }
+
+    &:nth-child(7) {
+      @include dg($green, $yellow);
+    }
+
+    &:nth-child(8) {
+      @include dg($pink, $orange);
+    }
+
+    &:nth-child(9) {
+      @include dg($teal, $blue);
+    }
+
+    &:nth-child(10) {
+      @include dg($yellow, $green);
+    }
+
+    &:nth-child(11) {
+      @include dg($red, $yellow);
+    }
+
+    &:nth-child(12) {
+      @include dg($cyan, $indigo);
+    }
+
+    &:nth-child(13) {
+      @include dg($grape, $yellow);
+    }
+
+    &:nth-child(14) {
+      @include dg($gray, $blue);
+    }
+
+    &:nth-child(15) {
+      @include dg($pink, $indigo);
+    }
+
+    &:nth-child(16) {
+      @include dg($lime, $teal);
+    }
+
+    &:nth-child(8n + 5) {
+      grid-column: 2 / 4;
+    }
+  }
+}
+
+.bio {
+  display: flex;
+  margin-bottom: 4rem;
+
+  &__image-container {
+    border-radius: 1rem;
+    margin-right: 4rem;
+  }
+
+  &__image {
+    border-radius: 1rem;
+    width: 20rem;
+  }
+
+  &__text {
+    background-color: $dark-gray;
+    border-radius: 2rem;
+    padding: 4rem;
+  }
+
+  &__heading {
+    font-size: 3.5rem;
+    margin: 0 0 1rem 0;
+  }
+
+  &__paragraph {
+    font-size: 1.1rem;
   }
 }
