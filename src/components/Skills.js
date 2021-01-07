@@ -125,11 +125,13 @@ export default function Skills({ reference }) {
 
   return (
     <div className="skills" ref={reference}>
-      <div className="skills__filters">
-        <h2>Skills</h2>
-        <div className="skills__filters-wrapper">{skillFilters}</div>
+      <h2>Skills</h2>
+      <div className="skills__main">
+        <div className="skills__filters">
+          <div className="skills__filters-wrapper">{skillFilters}</div>
+        </div>
+        <div className="skills__skills">{displayedSkills}</div>
       </div>
-      <div className="skills__skills">{displayedSkills}</div>
     </div>
   )
 }
