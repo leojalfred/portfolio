@@ -1,4 +1,4 @@
-@import 'styles/variables';
+@import 'mixins';
 
 .bio {
   display: flex;
@@ -15,8 +15,6 @@
   }
 
   &__text {
-    background-color: $dark-gray;
-    border-radius: 2rem;
-    padding: 4rem;
+    @include container();
   }
 }

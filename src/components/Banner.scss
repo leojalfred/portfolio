@@ -1,4 +1,4 @@
-@import 'styles/mixins';
+@import 'mixins';
 
 .banner {
   display: flex;
@@ -34,67 +34,67 @@
     width: 6rem;
 
     &:nth-child(1) {
-      @include dg($cyan, $lime);
+      @include diagonal-gradient($cyan, $lime);
     }
 
     &:nth-child(2) {
-      @include dg($orange, $pink);
+      @include diagonal-gradient($orange, $pink);
     }
 
     &:nth-child(3) {
-      @include dg($yellow, $orange);
+      @include diagonal-gradient($yellow, $orange);
     }
 
     &:nth-child(4) {
-      @include dg($red, $grape);
+      @include diagonal-gradient($red, $grape);
     }
 
     &:nth-child(5) {
-      @include dg($grape, $red);
+      @include diagonal-gradient($grape, $red);
     }
 
     &:nth-child(6) {
-      @include dg($violet, $cyan);
+      @include diagonal-gradient($violet, $cyan);
     }
 
     &:nth-child(7) {
-      @include dg($green, $yellow);
+      @include diagonal-gradient($green, $yellow);
     }
 
     &:nth-child(8) {
-      @include dg($pink, $orange);
+      @include diagonal-gradient($pink, $orange);
     }
 
     &:nth-child(9) {
-      @include dg($teal, $blue);
+      @include diagonal-gradient($teal, $blue);
     }
 
     &:nth-child(10) {
-      @include dg($yellow, $green);
+      @include diagonal-gradient($yellow, $green);
     }
 
     &:nth-child(11) {
-      @include dg($red, $yellow);
+      @include diagonal-gradient($red, $yellow);
     }
 
     &:nth-child(12) {
-      @include dg($cyan, $indigo);
+      @include diagonal-gradient($cyan, $indigo);
     }
 
     &:nth-child(13) {
-      @include dg($grape, $yellow);
+      @include diagonal-gradient($grape, $yellow);
     }
 
     &:nth-child(14) {
-      @include dg($gray, $blue);
+      @include diagonal-gradient($gray, $blue);
     }
 
     &:nth-child(15) {
-      @include dg($pink, $indigo);
+      @include diagonal-gradient($pink, $indigo);
     }
 
     &:nth-child(16) {
-      @include dg($lime, $teal);
+      @include diagonal-gradient($lime, $teal);
     }
 
     &:nth-child(8n + 5) {

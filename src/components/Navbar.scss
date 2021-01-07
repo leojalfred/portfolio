@@ -1,4 +1,4 @@
-@import 'styles/variables';
+@import 'variables';
 
 .navbar {
   background-color: black;
@@ -23,7 +23,7 @@
     cursor: pointer;
     display: flex;
     font-size: 1.25rem;
-    transition: color 0.2s;
+    transition: color $time;
 
     &:hover {
       color: $pink;
@@ -49,7 +49,7 @@
       height: 0.1rem;
       position: absolute;
       transform: scaleY(0);
-      transition: transform 0.2s;
+      transition: transform $time;
       width: 100%;
     }
 

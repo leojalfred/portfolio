@@ -2,34 +2,19 @@ import { useRef, useState, useEffect } from 'react'
 import './Skills.scss'
 
 export default function Skills({ reference }) {
-  const skillTags = {
-    'client-side': { ref: useRef(null), text: 'Client side' },
-    data: { ref: useRef(null), text: 'Data' },
-    design: { ref: useRef(null), text: 'Design' },
-    'document-based': { ref: useRef(null), text: 'Document based' },
-    'general-purpose': { ref: useRef(null), text: 'General purpose' },
-    'low-level': { ref: useRef(null), text: 'Low level' },
-    math: { ref: useRef(null), text: 'Math' },
-    relational: { ref: useRef(null), text: 'Relational' },
-    scripting: { ref: useRef(null), text: 'Scripting' },
-    'server-side': { ref: useRef(null), text: 'Server side' },
-    statistics: { ref: useRef(null), text: 'Statistics' },
-    technical: { ref: useRef(null), text: 'Technical' },
-  }
-
   const [activeSkillTags, setActiveSkillTags] = useState([])
   const [displayedSkills, setDisplayedSkills] = useState([])
   useEffect(() => {
     const skills = [
       { name: 'Algorithms and data structures', tags: ['technical'] },
       { name: 'Bash', tags: [] },
-      { name: 'Big Data', tags: ['data', 'technical'] },
+      { name: 'Big data', tags: ['data', 'technical'] },
       { name: 'Bootstrap', tags: ['design'] },
       { name: 'C', tags: ['general-purpose', 'low-level'] },
       { name: 'C++', tags: ['general-purpose', 'low-level'] },
       { name: 'CSS3', tags: ['client-side', 'design'] },
-      { name: 'Data Architecture', tags: ['data', 'technical'] },
-      { name: 'Database Management', tags: ['data', 'technical'] },
+      { name: 'Data architecture', tags: ['data', 'technical'] },
+      { name: 'Database management', tags: ['data', 'technical'] },
       { name: 'Elasticsearch', tags: [] },
       { name: 'Express', tags: ['server-side'] },
       { name: 'Git', tags: [] },
@@ -53,26 +38,28 @@ export default function Skills({ reference }) {
       { name: 'OCaml', tags: [] },
       { name: 'PHP', tags: ['general-purpose', 'scripting', 'server-side'] },
       { name: 'PostgreSQL', tags: ['data', 'relational'] },
-      { name: 'Project Management', tags: ['technical'] },
+      { name: 'Project management', tags: ['technical'] },
       { name: 'Prototyping', tags: ['design', 'technical'] },
       {
         name: 'Python',
-        tags: ['general-purpose', 'scripting', 'relational'],
+        tags: ['general-purpose', 'scripting'],
       },
       {
-        name: 'Quantitative Analysis',
+        name: 'Quantitative analysis',
         tags: ['math', 'statistics', 'technical'],
       },
       { name: 'R', tags: ['math', 'statistics'] },
       { name: 'Rails', tags: ['server-side'] },
-      { name: 'Responsive Design', tags: ['design', 'technical'] },
+      { name: 'React', tags: ['client-side', 'state-management'] },
+      { name: 'Redux', tags: ['state-management'] },
+      { name: 'Responsive design', tags: ['design', 'technical'] },
       { name: 'Ruby', tags: ['general-purpose', 'scripting'] },
       { name: 'Sass', tags: ['design', 'scripting'] },
       { name: 'SQL', tags: ['data', 'relational'] },
       { name: 'UX/UI', tags: ['design', 'technical'] },
-      { name: 'Web Design', tags: ['design', 'technical'] },
+      { name: 'Web design', tags: ['design', 'technical'] },
       { name: 'WordPress', tags: [] },
-      { name: 'x86 Assembly', tags: ['low-level'] },
+      { name: 'x86 assembly', tags: ['low-level'] },
     ]
 
     let skillsToDisplay = []
@@ -99,6 +86,22 @@ export default function Skills({ reference }) {
     setDisplayedSkills(skillsToDisplay)
   }, [activeSkillTags])
 
+  const skillTags = {
+    'client-side': { ref: useRef(null), text: 'Client side' },
+    data: { ref: useRef(null), text: 'Data' },
+    design: { ref: useRef(null), text: 'Design' },
+    'document-based': { ref: useRef(null), text: 'Document based' },
+    'general-purpose': { ref: useRef(null), text: 'General purpose' },
+    'low-level': { ref: useRef(null), text: 'Low level' },
+    math: { ref: useRef(null), text: 'Math' },
+    relational: { ref: useRef(null), text: 'Relational' },
+    scripting: { ref: useRef(null), text: 'Scripting' },
+    'server-side': { ref: useRef(null), text: 'Server side' },
+    'state-management': { ref: useRef(null), text: 'State management' },
+    statistics: { ref: useRef(null), text: 'Statistics' },
+    technical: { ref: useRef(null), text: 'Technical' },
+  }
+
   const handleFilter = key => () => {
     skillTags[key].ref.current.classList.toggle('skills__tag--active')
     if (activeSkillTags.includes(key))
@@ -124,7 +127,7 @@ export default function Skills({ reference }) {
     <div className="skills" ref={reference}>
       <div className="skills__filters">
         <h2>Skills</h2>
-        {skillFilters}
+        <div className="skills__filters-wrapper">{skillFilters}</div>
       </div>
       <div className="skills__skills">{displayedSkills}</div>
     </div>

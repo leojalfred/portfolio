@@ -1,11 +1,13 @@
 @import-normalize;
-@import 'styles/variables';
+@import 'mixins';
 
 body {
   background-color: black;
   color: white;
   font-family: $lato;
+  font-size: 1.1rem;
   margin: 0;
+  @include scrollbar();
 }
 
 h1,
@@ -20,8 +22,4 @@ h6 {
 h2 {
   font-size: 3.5rem;
   margin: 0 0 1rem 0;
-}
-
-p {
-  font-size: 1.1rem;
 }
