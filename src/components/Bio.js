@@ -1,5 +1,6 @@
 import './Bio.scss'
 import leo from '../images/leo.jpg'
+import resume from '../documents/resume.pdf'
 
 export default function Bio({ reference }) {
   return (
@@ -10,39 +11,49 @@ export default function Bio({ reference }) {
 
       <div className="bio__text">
         <h2>About me</h2>
-        <p className="bio__paragraph">
-          Anim sint nisi consectetur minim incididunt duis laboris consectetur
-          consectetur ad ut proident sunt. Dolore officia commodo irure magna
-          veniam eu aute. Nulla duis cupidatat consequat ea voluptate officia
-          sint proident. Laborum do adipisicing id enim pariatur id cupidatat
-          cupidatat in Lorem sunt do fugiat. Excepteur tempor occaecat occaecat
-          et ullamco cillum proident laboris nulla ad veniam consectetur
-          incididunt dolore. Laborum id aute occaecat aliquip esse. Laborum
-          fugiat commodo nostrud nisi do ut magna fugiat occaecat adipisicing
-          officia.
+        <p>
+          I currently attend the University of Minnesota, Twin Cities, where I
+          maintain a 3.92 GPA pursuing a dual degree in computer science,
+          political science, and statistics.
         </p>
-        <p className="bio__paragraph">
-          Anim sint nisi consectetur minim incididunt duis laboris consectetur
-          consectetur ad ut proident sunt. Dolore officia commodo irure magna
-          veniam eu aute. Nulla duis cupidatat consequat ea voluptate officia
-          sint proident. Laborum do adipisicing id enim pariatur id cupidatat
-          cupidatat in Lorem sunt do fugiat. Excepteur tempor occaecat occaecat
-          et ullamco cillum proident laboris nulla ad veniam consectetur
-          incididunt dolore. Laborum id aute occaecat aliquip esse. Laborum
-          fugiat commodo nostrud nisi do ut magna fugiat occaecat adipisicing
-          officia.
+        <p>
+          I'm passionate about applying technology and quantitative analysis to
+          solve real-world problems. When I'm not in class, I spend my time
+          researching algorithmic trading strategies and working on web
+          applications. I recently cofounded{' '}
+          <a href="https://www.hetchie.com/" target="_blank" rel="noreferrer">
+            Hetchie Co.
+          </a>{' '}
+          along with some USC Law students, a platform that analyzes data to
+          streamline the law school on-campus interview process. I'm kept busy
+          handling its overall management, data architecture, design,
+          development, deployment, maintenance, and everything else related to
+          its technological implementation.
         </p>
-        <p className="bio__paragraph">
-          Anim sint nisi consectetur minim incididunt duis laboris consectetur
-          consectetur ad ut proident sunt. Dolore officia commodo irure magna
-          veniam eu aute. Nulla duis cupidatat consequat ea voluptate officia
-          sint proident. Laborum do adipisicing id enim pariatur id cupidatat
-          cupidatat in Lorem sunt do fugiat. Excepteur tempor occaecat occaecat
-          et ullamco cillum proident laboris nulla ad veniam consectetur
-          incididunt dolore. Laborum id aute occaecat aliquip esse. Laborum
-          fugiat commodo nostrud nisi do ut magna fugiat occaecat adipisicing
-          officia.
+        <p>
+          Whether you need someone to develop entire applications solo or
+          integrate seamlessly into a team, I'm your guy. I may be young, but I
+          already have 7 years of serious web development experience. I'm
+          proficient in full-stack development, quantitative analysis, user
+          experience and user interface design, web design, and project
+          management. I probably have practice with whatever technologies you're
+          working with, otherwise, I can learn them quickly.
         </p>
+        <p>
+          I'm always looking to tackle new and intriguing technical challenges.
+          Please check out my background below, and if you think I could be of
+          help, feel free to reach out.
+        </p>
+        <div className="bio__resume-wrapper">
+          <a
+            className="bio__resume"
+            href={resume}
+            target="_blank"
+            rel="noreferrer"
+          >
+            See résumé
+          </a>
+        </div>
       </div>
     </div>
   )

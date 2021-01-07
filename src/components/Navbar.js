@@ -1,7 +1,7 @@
 import './Navbar.scss'
 import profile from '../images/profile.jpg'
 
-export default function Navbar({ bioRef, skillsRef }) {
+export default function Navbar({ bioRef, skillsRef, portfolioRef }) {
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' })
   const scrollTo = ref => () =>
     ref.current.scrollIntoView({ behavior: 'smooth', block: 'center' })
@@ -15,7 +15,9 @@ export default function Navbar({ bioRef, skillsRef }) {
         <div className="navbar__link-item" onClick={scrollTo(skillsRef)}>
           Skills
         </div>
-        <div className="navbar__link-item">Portfolio</div>
+        <div className="navbar__link-item" onClick={scrollTo(portfolioRef)}>
+          Portfolio
+        </div>
         <div className="navbar__link-item">Experience</div>
         <div className="navbar__link-item">Contact</div>
       </div>

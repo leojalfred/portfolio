@@ -1,6 +1,7 @@
 @import 'mixins';
 
 .skills {
+  margin-bottom: 4rem;
   @include container();
 
   &__main {
@@ -20,8 +21,6 @@
     background-color: white;
     border: none;
     border-radius: 1rem;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-      0 4px 6px -2px rgba(0, 0, 0, 0.05);
     color: $dark-gray;
     cursor: pointer;
     font-family: $fira-mono;
@@ -32,6 +31,7 @@
     outline: none;
     padding: 0.5rem 1rem;
     transition: background-color $time, box-shadow 0.4s, transform $time;
+    @include button-shadow(black);
 
     &:active {
       transform: translateY(0.2rem);
@@ -42,8 +42,7 @@
         $color: nth($colors, $i);
 
         &:hover {
-          box-shadow: 0 4px 6px -1px rgba($color, 0.2),
-            0 2px 4px -1px rgba($color, 0.12);
+          @include button-shadow($color);
         }
 
         &:hover,

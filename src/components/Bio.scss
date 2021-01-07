@@ -17,4 +17,35 @@
   &__text {
     @include container();
   }
+
+  &__resume-wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__resume {
+    background-color: $blue;
+    border: none;
+    border-radius: 2rem;
+    color: white;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-family: $fira-mono;
+    margin-top: 1rem;
+    outline: none;
+    padding: 0.75rem 2rem;
+    text-align: right;
+    transition: background-color $time, box-shadow 0.4s, transform $time;
+    @include button-shadow(black);
+
+    &:hover {
+      color: white;
+      background-color: $pink;
+      @include button-shadow($pink);
+    }
+
+    &:active {
+      transform: translateY(0.2rem);
+    }
+  }
 }

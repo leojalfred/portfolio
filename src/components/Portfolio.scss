@@ -1,0 +1,9 @@
+@import 'mixins';
+
+.portfolio {
+  @include container();
+
+  &__heading {
+    text-align: center;
+  }
+}

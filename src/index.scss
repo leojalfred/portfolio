@@ -4,7 +4,7 @@
 body {
   background-color: black;
   color: white;
-  font-family: $lato;
+  font-family: $nunito;
   font-size: 1.1rem;
   margin: 0;
   @include scrollbar();
@@ -22,4 +22,20 @@ h6 {
 h2 {
   font-size: 3.5rem;
   margin: 0 0 1rem 0;
+}
+
+p {
+  line-height: 1.4rem;
+}
+
+a {
+  color: $blue;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color $time;
+
+  &:hover,
+  &:active {
+    color: $pink;
+  }
 }
