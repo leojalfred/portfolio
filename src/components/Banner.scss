@@ -32,6 +32,11 @@
     height: 6rem;
     justify-content: center;
     width: 6rem;
+    transition: transform $time;
+
+    &:hover {
+      transform: scale(1.05, 1.05);
+    }
 
     &:nth-child(1) {
       @include diagonal-gradient($cyan, $lime);
