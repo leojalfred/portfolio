@@ -1,21 +1,34 @@
 // Colors
 $blue: #4dabf7;
+$light-blue: #a5d8ff;
 $cyan: #3bc9db;
+$light-cyan: #99e9f2;
 $grape: #da77f2;
+$light-grape: #eebefa;
 $gray: #ced4da;
 $dark-gray: #212529;
 $green: #69db7c;
+$light-green: #b2f2bb;
 $indigo: #748ffc;
+$light-indigo: #bac8ff;
 $lime: #a9e34b;
+$light-lime: #d8f5a2;
 $orange: #ffa94d;
+$light-orange: #ffd8a8;
 $pink: #f783ac;
+$light-pink: #fcc2d7;
 $red: #ff6b6b;
+$light-red: #ffc9c9;
 $teal: #38d9a9;
+$light-teal: #96f2d7;
 $violet: #b197fc;
+$light-violet: #d0bfff;
 $yellow: #ffe066;
+$light-yellow: #ffec99;
 
-$colors: $blue $cyan $grape $green $indigo $lime $orange $pink $red $teal
-  $violet $yellow;
+$colors: $light-blue $light-cyan $light-grape $light-green $light-indigo
+  $light-lime $light-orange $light-pink $light-red $light-teal $light-violet
+  $light-yellow;
 
 // Transitions
 $time: 0.2s;
