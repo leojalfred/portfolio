@@ -2,26 +2,31 @@ import './Navbar.scss'
 import scrollTo from '../utils/scrollTo'
 import profile from '../images/profile.jpg'
 
-export default function Navbar({ bio, skills, portfolio, experience }) {
+export default function Navbar({
+  bio,
+  skills,
+  portfolio,
+  experience,
+  contact,
+}) {
+  const linkObjects = [
+    { ref: bio, text: 'Bio' },
+    { ref: skills, text: 'Skills' },
+    { ref: portfolio, text: 'Portfolio' },
+    { ref: experience, text: 'Experience' },
+    { ref: contact, text: 'Contact' },
+  ]
+  const links = linkObjects.map(({ ref, text }, i) => (
+    <div className="navbar__link-item" onClick={scrollTo(ref)} key={i}>
+      {text}
+    </div>
+  ))
+
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' })
 
   return (
     <nav className="navbar">
-      <div className="navbar__links">
-        <div className="navbar__link-item" onClick={scrollTo(bio)}>
-          Bio
-        </div>
-        <div className="navbar__link-item" onClick={scrollTo(skills)}>
-          Skills
-        </div>
-        <div className="navbar__link-item" onClick={scrollTo(portfolio)}>
-          Portfolio
-        </div>
-        <div className="navbar__link-item" onClick={scrollTo(experience)}>
-          Experience
-        </div>
-        <div className="navbar__link-item">Contact</div>
-      </div>
+      <div className="navbar__links">{links}</div>
       <img
         className="navbar__home"
         src={profile}

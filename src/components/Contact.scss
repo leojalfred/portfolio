@@ -1,0 +1,47 @@
+@import 'variables';
+
+.contact {
+  background-color: $dark-gray;
+  border-radius: 2rem 2rem 0 0;
+  padding: 4rem;
+  text-align: center;
+
+  &__contacts {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__line {
+    align-items: center;
+    display: inline-flex;
+
+    &:first-child {
+      margin-right: 4rem;
+    }
+  }
+
+  &__icon {
+    margin-right: 1rem;
+
+    &--email {
+      font-size: 2rem;
+    }
+
+    &--phone {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__link {
+    color: white;
+  }
+
+  &__break {
+    margin: 2rem auto;
+    width: 28rem;
+  }
+
+  &__by {
+    margin: 0;
+  }
+}

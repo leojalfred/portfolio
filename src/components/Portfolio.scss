@@ -4,6 +4,7 @@
   display: grid;
   gap: 2rem;
   grid-template: 1fr / repeat(6, 1fr);
+  margin-bottom: 4rem;
   @include container();
 
   &__heading {

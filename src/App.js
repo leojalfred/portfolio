@@ -6,6 +6,7 @@ import Bio from './components/Bio'
 import Skills from './components/Skills'
 import Portfolio from './components/Portfolio'
 import Experience from './components/Experience'
+import Contact from './components/Contact'
 
 export default function App() {
   const bio = useRef()
@@ -21,6 +22,7 @@ export default function App() {
         skills={skills}
         portfolio={portfolio}
         experience={experience}
+        contact={contact}
       />
 
       <div className="main">
@@ -29,6 +31,7 @@ export default function App() {
         <Skills reference={skills} />
         <Portfolio reference={portfolio} />
         <Experience reference={experience} />
+        <Contact reference={contact} />
       </div>
     </>
   )
