@@ -5,28 +5,31 @@ import Banner from './components/Banner'
 import Bio from './components/Bio'
 import Skills from './components/Skills'
 import Portfolio from './components/Portfolio'
+import Experience from './components/Experience'
 
 export default function App() {
-  const bioRef = useRef(null)
-  const skillsRef = useRef(null)
-  const portfolioRef = useRef(null)
-  // const experienceRef = useRef(null)
-  // const contactRef = useRef(null)
+  const bio = useRef()
+  const skills = useRef()
+  const portfolio = useRef()
+  const experience = useRef()
+  // const contact = useRef(null)
 
   return (
-    <div>
+    <>
       <Navbar
-        bioRef={bioRef}
-        skillsRef={skillsRef}
-        portfolioRef={portfolioRef}
+        bio={bio}
+        skills={skills}
+        portfolio={portfolio}
+        experience={experience}
       />
 
       <div className="main">
         <Banner />
-        <Bio reference={bioRef} />
-        <Skills reference={skillsRef} />
-        <Portfolio reference={portfolioRef} />
+        <Bio reference={bio} />
+        <Skills reference={skills} />
+        <Portfolio reference={portfolio} />
+        <Experience reference={experience} />
       </div>
-    </div>
+    </>
   )
 }

@@ -22,7 +22,7 @@ export default function Banner() {
   const squares = logos.map((logo, i) => {
     return (
       <div className="banner__square" key={i}>
-        <i className={`fi fi-${logo}`}></i>
+        <i className={`banner__icon fi fi-${logo}`}></i>
       </div>
     )
   })

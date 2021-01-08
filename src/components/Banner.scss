@@ -106,4 +106,8 @@
       grid-column: 2 / 4;
     }
   }
+
+  &__icon {
+    @include drop-shadow(rgba(black, 0.35));
+  }
 }

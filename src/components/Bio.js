@@ -12,9 +12,9 @@ export default function Bio({ reference }) {
       <div className="bio__text">
         <h2>About me</h2>
         <p>
-          I currently attend the University of Minnesota, Twin Cities, where I
-          maintain a 3.92 GPA pursuing a dual degree in computer science,
-          political science, and statistics.
+          I’m currently a junior at the University of Minnesota, Twin Cities,
+          where I maintain a 3.92 GPA pursuing a dual degree with a BS in
+          computer science and a BA in political science and statistics.
         </p>
         <p>
           I'm passionate about applying technology and quantitative analysis to
@@ -24,7 +24,7 @@ export default function Bio({ reference }) {
           <a href="https://www.hetchie.com/" target="_blank" rel="noreferrer">
             Hetchie Co.
           </a>{' '}
-          along with some USC Law students, a platform that analyzes data to
+          alongside USC Law students, a platform that analyzes data to
           streamline the law school on-campus interview process. I keep busy
           handling its overall management, data architecture, design,
           development, deployment, maintenance, and everything else related to
@@ -32,12 +32,12 @@ export default function Bio({ reference }) {
         </p>
         <p>
           Whether you need someone to develop entire applications solo or
-          integrate seamlessly into a team, I'm your guy. I may be young, but I
-          already have 7 years of serious web development experience. I'm
-          proficient in full-stack development, quantitative analysis, user
-          experience and user interface design, web design, and project
-          management. I probably have practice with whatever technologies you're
-          working with; otherwise, I can learn them quickly.
+          integrate seamlessly into a team, with 7 years of series development
+          experience under my belt, I'm your guy. I'm proficient in full-stack
+          development, quantitative analysis, user experience and user interface
+          design, web design, and project management. I have practice with many
+          languages you likely work with, and I’m a fast learner when it comes
+          to new technologies.
         </p>
         <p>
           I'm always looking to tackle new and intriguing technical challenges.
