@@ -1,10 +1,9 @@
 import './Navbar.scss'
+import scrollTo from '../utils/scrollTo'
 import profile from '../images/profile.jpg'
 
 export default function Navbar({ bio, skills, portfolio, experience }) {
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' })
-  const scrollTo = ref => () =>
-    ref.current.scrollIntoView({ behavior: 'smooth', block: 'center' })
 
   return (
     <nav className="navbar">

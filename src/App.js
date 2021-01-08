@@ -12,7 +12,7 @@ export default function App() {
   const skills = useRef()
   const portfolio = useRef()
   const experience = useRef()
-  // const contact = useRef(null)
+  const contact = useRef()
 
   return (
     <>
@@ -25,7 +25,7 @@ export default function App() {
 
       <div className="main">
         <Banner />
-        <Bio reference={bio} />
+        <Bio bio={bio} contact={contact} />
         <Skills reference={skills} />
         <Portfolio reference={portfolio} />
         <Experience reference={experience} />

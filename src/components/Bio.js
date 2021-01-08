@@ -1,10 +1,11 @@
 import './Bio.scss'
 import leo from '../images/leo.jpg'
+import scrollTo from '../utils/scrollTo'
 import resume from '../documents/resume.pdf'
 
-export default function Bio({ reference }) {
+export default function Bio({ bio, contact }) {
   return (
-    <div className="bio" ref={reference}>
+    <div className="bio" ref={bio}>
       <div className="bio__image-container">
         <img className="bio__image" src={leo} alt="Leo" />
       </div>
@@ -42,7 +43,11 @@ export default function Bio({ reference }) {
         <p>
           I'm always looking to tackle new and intriguing technical challenges.
           Please check out my background below, and if you think I could be of
-          help, feel free to reach out.
+          help, feel free to{' '}
+          <button className="bio__contact" onClick={scrollTo(contact)}>
+            reach out
+          </button>
+          .
         </p>
         <div className="bio__resume-wrapper">
           <a

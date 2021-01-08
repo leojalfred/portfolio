@@ -18,6 +18,24 @@
     @include container();
   }
 
+  &__contact {
+    background-color: transparent;
+    border: none;
+    color: #4dabf7;
+    cursor: pointer;
+    font-family: $nunito;
+    font-size: 1.1rem;
+    font-weight: bold;
+    outline: none;
+    padding: 0;
+    transition: color 0.2s;
+
+    &:hover,
+    &:active {
+      color: $pink;
+    }
+  }
+
   &__resume-wrapper {
     display: flex;
     justify-content: flex-end;
@@ -29,8 +47,9 @@
     border-radius: 2rem;
     color: white;
     display: inline-block;
-    font-size: 1.5rem;
     font-family: $nunito;
+    font-size: 1.5rem;
+    font-weight: normal;
     margin-top: 1rem;
     outline: none;
     padding: 0.75rem 2rem;
