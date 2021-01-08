@@ -25,10 +25,6 @@
 
     &--considdr {
       @include diagonal-gradient($yellow, $green);
-
-      > .portfolio__image {
-        width: 8rem;
-      }
     }
 
     &--hetchie {
@@ -49,10 +45,6 @@
 
     &--robland {
       @include diagonal-gradient($cyan, $violet);
-
-      > .portfolio__image {
-        width: 8rem;
-      }
     }
 
     &--schwab {
@@ -65,10 +57,6 @@
 
     &--stimrouter {
       @include diagonal-gradient($teal, $blue);
-
-      > .portfolio__image {
-        width: 8rem;
-      }
     }
   }
 
