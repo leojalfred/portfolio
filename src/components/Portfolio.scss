@@ -1,9 +1,78 @@
 @import 'mixins';
 
 .portfolio {
+  display: grid;
+  gap: 2rem;
+  grid-template: 1fr / repeat(6, 1fr);
   @include container();
 
   &__heading {
     text-align: center;
+  }
+
+  &__item {
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    height: 10rem;
+    justify-content: center;
+    width: 10rem;
+    transition: transform $time;
+
+    &:hover {
+      transform: scale(1.05, 1.05);
+    }
+
+    &--considdr {
+      @include diagonal-gradient($yellow, $green);
+
+      > .portfolio__image {
+        width: 8rem;
+      }
+    }
+
+    &--hetchie {
+      @include diagonal-gradient($pink, $orange);
+
+      > .portfolio__image {
+        width: 5rem;
+      }
+    }
+
+    &--polywater {
+      @include diagonal-gradient($grape, $red);
+
+      > .portfolio__image {
+        width: 7rem;
+      }
+    }
+
+    &--robland {
+      @include diagonal-gradient($cyan, $violet);
+
+      > .portfolio__image {
+        width: 8rem;
+      }
+    }
+
+    &--schwab {
+      @include diagonal-gradient($grape, $yellow);
+
+      > .portfolio__image {
+        width: 5rem;
+      }
+    }
+
+    &--stimrouter {
+      @include diagonal-gradient($teal, $blue);
+
+      > .portfolio__image {
+        width: 8rem;
+      }
+    }
+  }
+
+  &__image {
+    width: 8rem;
   }
 }

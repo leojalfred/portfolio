@@ -25,7 +25,7 @@ export default function Bio({ reference }) {
             Hetchie Co.
           </a>{' '}
           along with some USC Law students, a platform that analyzes data to
-          streamline the law school on-campus interview process. I'm kept busy
+          streamline the law school on-campus interview process. I keep busy
           handling its overall management, data architecture, design,
           development, deployment, maintenance, and everything else related to
           its technological implementation.
@@ -37,7 +37,7 @@ export default function Bio({ reference }) {
           proficient in full-stack development, quantitative analysis, user
           experience and user interface design, web design, and project
           management. I probably have practice with whatever technologies you're
-          working with, otherwise, I can learn them quickly.
+          working with; otherwise, I can learn them quickly.
         </p>
         <p>
           I'm always looking to tackle new and intriguing technical challenges.
