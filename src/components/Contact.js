@@ -3,7 +3,7 @@ import './Contact.scss'
 export default function Contact({ reference }) {
   return (
     <div className="contact" ref={reference}>
-      <h2>Contact me</h2>
+      <h2>Contact Me</h2>
       <div className="contact__contacts">
         <span className="contact__line">
           <i className="contact__icon contact__icon--email fi fi-email"></i>

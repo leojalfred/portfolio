@@ -19,9 +19,21 @@ h6 {
   font-family: $halant;
 }
 
+h1 {
+  font-size: 5.5rem;
+}
+
+h2,
+h3 {
+  margin: 0 0 1rem 0;
+}
+
 h2 {
   font-size: 3.5rem;
-  margin: 0 0 1rem 0;
+}
+
+h3 {
+  font-size: 2.25rem;
 }
 
 p {

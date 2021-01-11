@@ -12,7 +12,6 @@ export default function Portfolio({ reference }) {
       alt: 'Considdr',
       className: 'considdr',
       image: considdr,
-      link: 'https://medium.com/considdr-history',
     },
     {
       alt: 'Hetchie',
@@ -24,7 +23,6 @@ export default function Portfolio({ reference }) {
       alt: 'Polywater',
       className: 'polywater',
       image: polywater,
-      link: 'https://www.polywater.com/',
     },
     {
       alt: 'Robland Home Healthcare',
@@ -45,8 +43,8 @@ export default function Portfolio({ reference }) {
       link: 'https://stimrouter.com/',
     },
   ]
-  const items = itemObjects.map(({ alt, className, image, link }, i) => {
-    return (
+  const items = itemObjects.map(({ alt, className, image, link }, i) =>
+    link ? (
       <a
         className={`portfolio__item portfolio__item--${className}`}
         href={link}
@@ -56,15 +54,17 @@ export default function Portfolio({ reference }) {
       >
         <img className="portfolio__image" src={image} alt={alt} />
       </a>
+    ) : (
+      <div className={`portfolio__item portfolio__item--${className}`} key={i}>
+        <img className="portfolio__image" src={image} alt={alt} />
+      </div>
     )
-  })
+  )
 
   return (
-    <>
-      <h2 className="portfolio__heading">Selected Portfolio</h2>
-      <div className="portfolio" ref={reference}>
-        {items}
-      </div>
-    </>
+    <div ref={reference}>
+      <h2 className="portfolio__heading">Selected portfolio</h2>
+      <div className="portfolio">{items}</div>
+    </div>
   )
 }
