@@ -8,40 +8,64 @@ export default function Experience({ reference }) {
         <div className="experience__category experience__category--education">
           <h3 className="experience__heading">Education</h3>
           <div className="experience__group">
-            <h4 className="experience__subheading">
-              University of Minnesota Twin Cities
-            </h4>
-            <h4 className="experience__subheading">Sep 2018–⁠Present</h4>
-            <p className="experience__body">
-              I've always had a lot of interests, so it was hard to choose my
-              educational focus. After a lot of thought and some maneuvering, I
-              decided to enroll in the College of Science and Engineering in
-              addition to the College of Liberal Arts, allowing me to pursue a
-              BS in computer science and BA with a major in political science
-              and a minor in statistics.
-            </p>
-            <p className="experience__body">
-              My main fascination lies in the intersection of all of those
-              fields, and I've long been intrigued by political modeling and
-              election forecasting. Last year, I was recognized for my work
-              applying quantitative analysis to explore the relationship between
-              socioeconomic status and age of entering parenthood with a
-              nomination for the William Jennings Bryan Prize.
-            </p>
-            <p className="experience__body">
-              I maintain a 3.92 cumulative GPA, with a 3.881 and a 3.923 in
-              computer science and political science respectively. Notable
-              recent classes include Machine Learning Fundamentals, Applied
-              Multivariate Methods, Algorithms and Data Structures, Regression
-              and Correlated Data, Quantitative Political Analysis, and Advanced
-              Programming Principles.
-            </p>
+            <div className="experience__topline">
+              <div className="experience__headings">
+                <h4 className="experience__h4">
+                  University of Minnesota Twin Cities
+                </h4>
+                <h5 className="experience__h5">Student</h5>
+              </div>
+              <div className="experience__date">
+                Sep 2018
+                <br />–<br />
+                ⁠Present
+              </div>
+            </div>
+
+            <div className="experience__body">
+              <p className="experience__text">
+                I've always had a lot of interests, so it was hard to choose my
+                educational focus. After a lot of thought and some maneuvering,
+                I decided to enroll in the College of Science and Engineering in
+                addition to the College of Liberal Arts, allowing me to pursue a
+                BS in computer science and BA with a major in political science
+                and a minor in statistics.
+              </p>
+              <p className="experience__text">
+                My main fascination lies in the intersection of all of those
+                fields, and I've long been intrigued by political modeling and
+                election forecasting. Last year, I was recognized for my work
+                applying quantitative analysis to explore the relationship
+                between socioeconomic status and age of entering parenthood with
+                a nomination for the William Jennings Bryan Prize.
+              </p>
+              <p className="experience__text">
+                I maintain a 3.92 cumulative GPA, with a 3.881 and a 3.923 in
+                computer science and political science respectively. Notable
+                recent classes include Machine Learning Fundamentals, Applied
+                Multivariate Methods, Algorithms and Data Structures, Regression
+                and Correlated Data, Quantitative Political Analysis, and
+                Advanced Programming Principles.
+              </p>
+            </div>
           </div>
+
           <span className="experience__line"></span>
+
           <div className="experience__group">
-            <h4 className="experience__subheading">Mayo High School</h4>
-            <h4 className="experience__subheading">Sep 2014–Jan 2018</h4>
-            <p className="experience__body">
+            <div className="experience__topline">
+              <div className="experience__date">
+                Sep 2014
+                <br />–<br />
+                Jan 2018
+              </div>
+              <div className="experience__headings">
+                <h4 className="experience__h4">Mayo High School</h4>
+                <h5 className="experience__h5">Student</h5>
+              </div>
+            </div>
+
+            <p className="experience__body experience__text">
               Throughout my high school experience, I always loved to challenge
               myself with difficult classes, while still pursuing my personal
               interests to the best of my ability. I graduated in the top 4% of
@@ -53,35 +77,60 @@ export default function Experience({ reference }) {
             </p>
           </div>
         </div>
+
         <div className="experience__category experience__category--work">
           <h3 className="experience__heading">Work</h3>
           <div className="experience__group">
-            <h4 className="experience__subheading">Hetchie</h4>
-            <h4 className="experience__subheading">May 2020–⁠Present</h4>
-            <p className="experience__body">
-              I recently cofounded Hetchie, a company that extracts insights
-              from data to streamline law school on-campus interview processes.
-              I've managed the project since its creation, conceptualizing its
-              NoSQL data architecture and the flow of information to prioritize
-              the results it returns.
-            </p>
-            <p className="experience__body">
-              Throughout my work, I've formulated novel web application designs,
-              ensuring a quality user experience and a distinctive brand
-              presence. I've built its entire codebase from scratch,
-              coordinating with our business team to bring abstract ideas to
-              fruition and ensure the security of our platform. Furthermore, I
-              handle the app's deployment and maintenance via Heroku,
-              guaranteeing code integrity and platform stability. Hetchie uses
-              MongoDB with Mongoose, Node.js with Express, and React with Sass
-              as its core technology stack.
-            </p>
+            <div className="experience__topline">
+              <div className="experience__headings">
+                <h4 className="experience__h4">Hetchie</h4>
+                <h5 className="experience__h5">Chief Technology Officer</h5>
+              </div>
+              <div className="experience__date">
+                May 2020
+                <br />–<br />
+                ⁠Present
+              </div>
+            </div>
+
+            <div className="experience__body">
+              <p className="experience__text">
+                I recently cofounded Hetchie, a company that extracts insights
+                from data to streamline law school on-campus interview
+                processes. I've managed the project since its creation,
+                conceptualizing its NoSQL data architecture and the flow of
+                information to prioritize the results it returns.
+              </p>
+              <p className="experience__text">
+                Throughout my work, I've formulated novel web application
+                designs, ensuring a quality user experience and a distinctive
+                brand presence. I've built its entire codebase from scratch,
+                coordinating with our business team to bring abstract ideas to
+                fruition and ensure the security of our platform. Furthermore, I
+                handle the app's deployment and maintenance via Heroku,
+                guaranteeing code integrity and platform stability. Hetchie uses
+                MongoDB with Mongoose, Node.js with Express, and React with Sass
+                as its core technology stack.
+              </p>
+            </div>
           </div>
+
           <span className="experience__line"></span>
+
           <div className="experience__group">
-            <h4 className="experience__subheading">Pixelsmith</h4>
-            <h4 className="experience__subheading">May 2020–Aug 2020</h4>
-            <p className="experience__body">
+            <div className="experience__topline">
+              <div className="experience__date">
+                May 2020
+                <br />–<br />
+                Aug 2020
+              </div>
+              <div className="experience__headings">
+                <h4 className="experience__h4">Pixelsmith</h4>
+                <h5 className="experience__h5">Full Stack Developer</h5>
+              </div>
+            </div>
+
+            <p className="experience__body experience__text">
               After my sophomore year, I worked as an independent contractor
               producing unique WordPress themes for major companies including
               Medtronic and Charles Schwab through Pixelsmith, a local web
@@ -92,37 +141,62 @@ export default function Experience({ reference }) {
               codebases to ease future maintenance and reduce development costs.
             </p>
           </div>
+
           <span className="experience__line"></span>
+
           <div className="experience__group">
-            <h4 className="experience__subheading">Considdr</h4>
-            <h4 className="experience__subheading">Jun 2019–⁠Mar 2020</h4>
-            <p className="experience__body">
-              For my summer break after freshman year, I interned as a software
-              engineer for Considdr, an AI-powered search engine startup that
-              returned extracted information instead of links. Considdr was
-              accepted into the 2019 MassChallenge Boston program, where I was
-              the youngest worker in the accelerator.
-            </p>
-            <p className="experience__body">
-              In my time as an intern, and later as a full stack developer, I
-              led the application's front end development using HTML, CSS, and
-              JavaScript. My principal acheivement was the redevelopment of the
-              entirety of the main site's markup and styling, producing a
-              responsive, cross-platform layout. I also picked up valuable user
-              experience skills through conducting user interviews and
-              incorporating responses into future prototypes and
-              fully-functional implementations. Much of the rest of my work
-              included facilitating asynchronous big data processing through
-              Ruby on Rails, Postgres, Elasticsearch, and Ajax.
-            </p>
+            <div className="experience__topline">
+              <div className="experience__headings">
+                <h4 className="experience__h4">Considdr</h4>
+                <h5 className="experience__h5">Full Stack Developer</h5>
+              </div>
+              <div className="experience__date">
+                Jun 2019
+                <br />–<br />
+                ⁠Mar 2020
+              </div>
+            </div>
+
+            <div className="experience__body">
+              <p className="experience__text">
+                For my summer break after freshman year, I interned as a
+                software engineer for Considdr, an AI-powered search engine
+                startup that returned extracted information instead of links.
+                Considdr was accepted into the 2019 MassChallenge Boston
+                program, where I was the youngest worker in the accelerator.
+              </p>
+              <p className="experience__text">
+                In my time as an intern, and later as a full stack developer, I
+                led the application's front end development using HTML, CSS, and
+                JavaScript. My principal acheivement was the redevelopment of
+                the entirety of the main site's markup and styling, producing a
+                responsive, cross-platform layout. I also picked up valuable
+                user experience skills through conducting user interviews and
+                incorporating responses into future prototypes and
+                fully-functional implementations. Much of the rest of my work
+                included facilitating asynchronous big data processing through
+                Ruby on Rails, Postgres, Elasticsearch, and Ajax.
+              </p>
+            </div>
           </div>
         </div>
+
         <div className="experience__category experience__category--volunteer">
           <h3 className="experience__heading">Volunteer</h3>
           <div className="experience__group">
-            <h4 className="experience__subheading">Rich Wright for Congress</h4>
-            <h4 className="experience__subheading">Feb 2018–⁠Apr 2018</h4>
-            <p className="experience__body">
+            <div className="experience__topline">
+              <div className="experience__headings">
+                <h4 className="experience__h4">Rich Wright for Congress</h4>
+                <h5 className="experience__h5">Volunteer</h5>
+              </div>
+              <div className="experience__date">
+                Feb 2018
+                <br />–<br />
+                Apr 2018
+              </div>
+            </div>
+
+            <p className="experience__body experience__text">
               Eager to apply my web development skills to the political world, I
               volunteered to design the campaign's web presence, organize
               content, and direct social media integration to promote Rich
@@ -131,13 +205,25 @@ export default function Experience({ reference }) {
               font pairings, and page layouts to increase voter engagement.
             </p>
           </div>
+
           <span className="experience__line"></span>
+
           <div className="experience__group">
-            <h4 className="experience__subheading">
-              Black Data Processing Associates Southern Minnesota
-            </h4>
-            <h4 className="experience__subheading">Nov 2016–⁠May 2018</h4>
-            <p className="experience__body">
+            <div className="experience__topline">
+              <div className="experience__date">
+                Nov 2016
+                <br />–<br />
+                May 2018
+              </div>
+              <div className="experience__headings">
+                <h4 className="experience__h4">
+                  Black Data Processing Associates Southern MN
+                </h4>
+                <h5 className="experience__h5">Student Teacher</h5>
+              </div>
+            </div>
+
+            <p className="experience__body experience__text">
               Much of my initial design, web development, and project management
               training came from my time as a student at BDPA SMN, where I
               participated in weekly classes and annual national competitions.

@@ -14,22 +14,62 @@
     grid-column-end: span 2;
     max-width: 27rem;
 
-    &--education > .experience__line {
-      background-image: linear-gradient($pink, $grape);
-    }
+    &--education {
+      > .experience__group {
+        &:first-of-type .experience__date {
+          @include diagonal-gradient($red, $grape);
+        }
 
-    &--work > .experience__line {
-      &:first-of-type {
-        background-image: linear-gradient($orange, $yellow);
+        &:nth-of-type(2) .experience__date {
+          @include diagonal-gradient($cyan, $indigo);
+        }
       }
 
-      &:nth-of-type(2) {
-        background-image: linear-gradient($lime, $teal);
+      > .experience__line {
+        background-image: linear-gradient($pink, $grape);
       }
     }
 
-    &--volunteer > .experience__line {
-      background-image: linear-gradient($green, $blue);
+    &--work {
+      > .experience__group {
+        &:first-of-type .experience__date {
+          @include diagonal-gradient($orange, $yellow);
+        }
+
+        &:nth-of-type(2) .experience__date {
+          @include diagonal-gradient($green, $teal);
+        }
+
+        &:nth-of-type(3) .experience__date {
+          @include diagonal-gradient($orange, $pink);
+        }
+      }
+
+      > .experience__line {
+        &:first-of-type {
+          background-image: linear-gradient($orange, $yellow);
+        }
+
+        &:nth-of-type(2) {
+          background-image: linear-gradient($lime, $teal);
+        }
+      }
+    }
+
+    &--volunteer {
+      > .experience__group {
+        &:first-of-type .experience__date {
+          @include diagonal-gradient($cyan, $lime);
+        }
+
+        &:nth-of-type(2) .experience__date {
+          @include diagonal-gradient($red, $yellow);
+        }
+      }
+
+      > .experience__line {
+        background-image: linear-gradient($cyan, $lime);
+      }
     }
 
     &:last-child {
@@ -47,26 +87,66 @@
     background-color: $dark-gray;
     border-radius: 1rem;
     color: white;
-    padding: 2rem;
 
-    &:nth-of-type(2n) > .experience__subheading {
+    &:nth-of-type(2n) .experience__headings {
       text-align: right;
     }
   }
 
-  &__subheading {
-    font-family: $halant;
+  &__topline {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+
+  &__headings {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0 2rem 0 0;
+    padding: 2rem 0 0 2rem;
+
+    &:last-child {
+      margin: 0 0 0 2rem;
+      padding: 2rem 2rem 0 0;
+    }
+  }
+
+  &__h4 {
     font-size: 1.2rem;
     margin: 0;
     text-transform: uppercase;
   }
 
-  &__body {
-    font-size: 1rem;
+  &__h5 {
+    margin: 0.5rem 0 0 0;
+    text-transform: uppercase;
+  }
+
+  &__date {
+    align-items: center;
+    border-radius: 1rem 0;
+    display: flex;
+    font-family: $fira-mono;
+    font-size: 0.9rem;
+    font-weight: 500;
+    justify-content: center;
+    height: 6rem;
+    min-width: 6rem;
+    text-align: center;
 
     &:last-child {
-      margin-bottom: 0;
+      border-radius: 0 1rem;
     }
+  }
+
+  &__body {
+    font-size: 1rem;
+    padding: 0 2rem 2rem 2rem;
+  }
+
+  &__text:last-child {
+    margin-bottom: 0;
   }
 
   &__line {

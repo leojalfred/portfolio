@@ -23,9 +23,9 @@
     border-radius: 1rem;
     color: $dark-gray;
     cursor: pointer;
-    font-family: $nunito;
+    font-family: $fira-mono;
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: bold;
     line-height: 1;
     margin: 0 0.75rem 0.75rem 0;
     outline: none;
@@ -62,7 +62,7 @@
     border: 0.15rem solid;
     border-radius: 1rem;
     display: inline-block;
-    font-family: $nunito;
+    font-family: $fira-mono;
     font-size: 1rem;
     margin: 0 0.5rem 0.5rem 0;
     padding: 0.25rem 1rem;
