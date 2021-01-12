@@ -24,7 +24,7 @@ h6 {
 }
 
 h1 {
-  font-size: 5.5rem;
+  font-size: 2rem;
 }
 
 h2,
@@ -56,9 +56,21 @@ a {
   }
 }
 
+@include breakpoint($s) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@include breakpoint($m) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+
 @include breakpoint($l) {
   h1 {
-    // font-size: 3.75rem;
+    font-size: 5.5rem;
   }
 }
 

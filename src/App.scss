@@ -1,5 +1,12 @@
+@import 'mixins';
+
 .main {
-  margin: 6rem auto 0 auto;
+  margin: 5rem auto 0 auto;
   max-width: 100rem;
-  padding: 0 6rem;
+  padding: 0 2rem;
+
+  @include breakpoint($s) {
+    margin-top: 6rem;
+    padding: 0 6rem;
+  }
 }

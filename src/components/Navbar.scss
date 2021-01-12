@@ -111,7 +111,7 @@
 
 @include breakpoint($s) {
   .navbar {
-    padding: 2rem 4rem;
+    padding: 1.5rem 4rem;
   }
 
   .overlay {
@@ -121,7 +121,7 @@
 
 @include breakpoint($m) {
   .navbar {
-    padding: 2rem 6rem;
+    padding: 1.5rem 6rem;
   }
 }
 

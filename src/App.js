@@ -26,8 +26,8 @@ export default function App() {
       />
 
       <div className="main">
-        {/* <Banner />
-        <Bio bio={bio} contact={contact} />
+        <Banner />
+        {/* <Bio bio={bio} contact={contact} />
         <Skills reference={skills} />
         <Portfolio reference={portfolio} />
         <Experience reference={experience} />

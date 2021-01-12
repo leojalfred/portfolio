@@ -13,110 +13,7 @@
   }
 
   &__tech {
-    display: grid;
-    gap: 2rem;
-    grid-template: repeat(4, 1fr) / repeat(9, 1fr);
-  }
-
-  &__square {
-    align-items: center;
-    border-radius: 1rem;
-    display: flex;
-    font-size: 2rem;
-    grid-column-start: span 2;
-    height: 6rem;
-    justify-content: center;
-    width: 6rem;
-    transition: transform $time;
-
-    &:hover {
-      transform: scale(1.05, 1.05);
-    }
-
-    &:nth-child(1) {
-      @include diagonal-gradient($cyan, $lime);
-    }
-
-    &:nth-child(2) {
-      @include diagonal-gradient($orange, $pink);
-    }
-
-    &:nth-child(3) {
-      @include diagonal-gradient($yellow, $orange);
-    }
-
-    &:nth-child(4) {
-      @include diagonal-gradient($red, $grape);
-    }
-
-    &:nth-child(5) {
-      @include diagonal-gradient($grape, $red);
-    }
-
-    &:nth-child(6) {
-      @include diagonal-gradient($violet, $cyan);
-    }
-
-    &:nth-child(7) {
-      @include diagonal-gradient($green, $yellow);
-    }
-
-    &:nth-child(8) {
-      @include diagonal-gradient($pink, $orange);
-    }
-
-    &:nth-child(9) {
-      @include diagonal-gradient($teal, $blue);
-    }
-
-    &:nth-child(10) {
-      @include diagonal-gradient($yellow, $green);
-    }
-
-    &:nth-child(11) {
-      @include diagonal-gradient($red, $yellow);
-    }
-
-    &:nth-child(12) {
-      @include diagonal-gradient($cyan, $indigo);
-    }
-
-    &:nth-child(13) {
-      @include diagonal-gradient($grape, $yellow);
-    }
-
-    &:nth-child(14) {
-      @include diagonal-gradient($gray, $blue);
-    }
-
-    &:nth-child(15) {
-      @include diagonal-gradient($pink, $indigo);
-    }
-
-    &:nth-child(16) {
-      @include diagonal-gradient($lime, $teal);
-    }
-
-    &:nth-child(8n + 5) {
-      grid-column: 2 / 4;
-    }
-  }
-
-  &__icon {
-    @include drop-shadow(rgba(black, 0.35));
-  }
-
-  @include breakpoint($m) {
-    &__tech {
-      gap: 2rem;
-      margin: 2rem auto 0 auto;
-      width: 34rem;
-    }
-
-    &__square {
-      height: 6rem;
-      width: 6rem;
-    }
+    display: none;
   }
 
   @include breakpoint($xl) {
@@ -131,18 +28,105 @@
     }
 
     &__tech {
+      display: grid;
+      grid-template: repeat(4, 1fr) / repeat(9, 1fr);
       gap: 1rem;
+      width: 26rem;
     }
 
     &__square {
+      align-items: center;
+      border-radius: 1rem;
+      display: flex;
+      font-size: 2rem;
+      grid-column-start: span 2;
       height: 5rem;
+      justify-content: center;
       width: 5rem;
+      transition: transform $time;
+
+      &:hover {
+        transform: scale(1.05, 1.05);
+      }
+
+      &:nth-child(1) {
+        @include diagonal-gradient($cyan, $lime);
+      }
+
+      &:nth-child(2) {
+        @include diagonal-gradient($orange, $pink);
+      }
+
+      &:nth-child(3) {
+        @include diagonal-gradient($yellow, $orange);
+      }
+
+      &:nth-child(4) {
+        @include diagonal-gradient($red, $grape);
+      }
+
+      &:nth-child(5) {
+        @include diagonal-gradient($grape, $red);
+      }
+
+      &:nth-child(6) {
+        @include diagonal-gradient($violet, $cyan);
+      }
+
+      &:nth-child(7) {
+        @include diagonal-gradient($green, $yellow);
+      }
+
+      &:nth-child(8) {
+        @include diagonal-gradient($pink, $orange);
+      }
+
+      &:nth-child(9) {
+        @include diagonal-gradient($teal, $blue);
+      }
+
+      &:nth-child(10) {
+        @include diagonal-gradient($yellow, $green);
+      }
+
+      &:nth-child(11) {
+        @include diagonal-gradient($red, $yellow);
+      }
+
+      &:nth-child(12) {
+        @include diagonal-gradient($cyan, $indigo);
+      }
+
+      &:nth-child(13) {
+        @include diagonal-gradient($grape, $yellow);
+      }
+
+      &:nth-child(14) {
+        @include diagonal-gradient($gray, $blue);
+      }
+
+      &:nth-child(15) {
+        @include diagonal-gradient($pink, $indigo);
+      }
+
+      &:nth-child(16) {
+        @include diagonal-gradient($lime, $teal);
+      }
+
+      &:nth-child(8n + 5) {
+        grid-column: 2 / 4;
+      }
+    }
+
+    &__icon {
+      @include drop-shadow(rgba(black, 0.35));
     }
   }
 
   @include breakpoint($xxl) {
     &__tech {
       gap: 2rem;
+      width: 34rem;
     }
 
     &__square {
