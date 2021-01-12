@@ -8,6 +8,10 @@ body {
   font-size: 1.1rem;
   margin: 0;
   @include scrollbar();
+
+  &.overlayed {
+    overflow: hidden;
+  }
 }
 
 h1,
@@ -49,5 +53,23 @@ a {
   &:hover,
   &:active {
     color: $pink;
+  }
+}
+
+@include breakpoint($l) {
+  h1 {
+    // font-size: 3.75rem;
+  }
+}
+
+@include breakpoint($xl) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+
+@include breakpoint($xxl) {
+  h1 {
+    font-size: 5.5rem;
   }
 }

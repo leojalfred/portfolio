@@ -1,15 +1,11 @@
 @import 'mixins';
 
 .banner {
-  display: flex;
   margin-bottom: 4rem;
   padding-top: 2rem;
 
   &__text {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    justify-content: center;
+    text-align: center;
   }
 
   &__heading {
@@ -108,5 +104,50 @@
 
   &__icon {
     @include drop-shadow(rgba(black, 0.35));
+  }
+
+  @include breakpoint($m) {
+    &__tech {
+      gap: 2rem;
+      margin: 2rem auto 0 auto;
+      width: 34rem;
+    }
+
+    &__square {
+      height: 6rem;
+      width: 6rem;
+    }
+  }
+
+  @include breakpoint($xl) {
+    display: flex;
+
+    &__text {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      justify-content: center;
+      text-align: left;
+    }
+
+    &__tech {
+      gap: 1rem;
+    }
+
+    &__square {
+      height: 5rem;
+      width: 5rem;
+    }
+  }
+
+  @include breakpoint($xxl) {
+    &__tech {
+      gap: 2rem;
+    }
+
+    &__square {
+      height: 6rem;
+      width: 6rem;
+    }
   }
 }

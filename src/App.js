@@ -26,12 +26,12 @@ export default function App() {
       />
 
       <div className="main">
-        <Banner />
+        {/* <Banner />
         <Bio bio={bio} contact={contact} />
         <Skills reference={skills} />
         <Portfolio reference={portfolio} />
         <Experience reference={experience} />
-        <Contact reference={contact} />
+        <Contact reference={contact} /> */}
       </div>
     </>
   )

@@ -1,85 +1,217 @@
-@import 'variables';
+@import 'mixins';
 
 .navbar {
+  align-items: center;
   background-color: black;
   display: flex;
   justify-content: space-between;
   left: 0;
   margin: 0 auto;
   max-width: 100rem;
-  padding: 2rem 6rem;
+  padding: 1rem 2rem;
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 1;
+  z-index: 2;
 
-  &__links {
-    display: flex;
-    flex: 1;
-  }
-
-  &__link-item,
-  &__social-item {
-    align-items: center;
-    cursor: pointer;
-    display: flex;
-    font-size: 1.25rem;
-    transition: color $time;
-
-    &:hover {
-      color: $pink;
-    }
-  }
-
-  &__link-item {
-    align-items: center;
-    cursor: pointer;
-    display: flex;
-    font-family: $halant;
-    margin-right: 2rem;
-    position: relative;
-
-    &:last-child {
-      margin-right: 0;
-    }
-
-    &::before {
-      background-color: $pink;
-      bottom: 0rem;
-      content: '';
-      height: 0.1rem;
-      position: absolute;
-      transform: scaleY(0);
-      transition: transform $time;
-      width: 100%;
-    }
-
-    &:hover::before {
-      visibility: visible;
-      transform: scaleY(1);
-    }
+  &__links,
+  &__socials {
+    display: none;
   }
 
   &__home {
     border-radius: 50%;
     cursor: pointer;
     display: block;
-    width: 2rem;
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+}
+
+.link-item,
+.social-item {
+  transition: color $time;
+
+  &:hover {
+    color: $pink;
+  }
+}
+
+.link-item {
+  font-family: $halant;
+  position: relative;
+
+  &::before {
+    background-color: $pink;
+    bottom: 0;
+    content: '';
+    height: 0.2rem;
+    left: 0;
+    position: absolute;
+    transform: scaleY(0);
+    transition: transform $time;
+    width: 100%;
   }
 
-  &__socials {
+  &:hover::before {
+    transform: scaleY(1);
+  }
+}
+
+.social-item {
+  color: white;
+}
+
+.overlay {
+  background-color: black;
+  display: none;
+  font-size: 2rem;
+  height: 100%;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  transition: opacity $time;
+  width: 100%;
+  z-index: 1;
+
+  &--displayed {
+    align-items: center;
     display: flex;
-    flex: 1;
-    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &--visible {
+    opacity: 1;
+  }
+
+  &__links {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+
+  &__link-item {
+    margin-bottom: 1rem;
+    width: fit-content;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   &__social-item {
-    color: white;
-    margin-left: 2rem;
-    text-decoration: none;
-
     &:first-child {
-      margin-left: 0;
+      margin-right: 2rem;
+    }
+  }
+}
+
+@include breakpoint($s) {
+  .navbar {
+    padding: 2rem 4rem;
+  }
+
+  .overlay {
+    font-size: 2.5rem;
+  }
+}
+
+@include breakpoint($m) {
+  .navbar {
+    padding: 2rem 6rem;
+  }
+}
+
+@include breakpoint($l) {
+  .navbar {
+    &__links {
+      display: flex;
+      flex: 1;
+    }
+
+    &__link-item,
+    &__social-item {
+      cursor: pointer;
+      font-size: 1.1rem;
+    }
+
+    &__link-item {
+      cursor: pointer;
+      margin-right: 1rem;
+
+      &::before {
+        height: 0.1rem;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &__home {
+      height: 2rem;
+      width: 2rem;
+    }
+
+    &__socials {
+      display: flex;
+      flex: 1;
+      justify-content: flex-end;
+    }
+
+    &__social-item {
+      align-items: center;
+      display: flex;
+      margin-left: 1rem;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    > .hamburger-react {
+      display: none;
+    }
+  }
+
+  .overlay--displayed {
+    display: none;
+  }
+}
+
+@include breakpoint($xl) {
+  .navbar {
+    &__link-item,
+    &__social-item {
+      font-size: 1.25rem;
+    }
+
+    &__link-item {
+      margin-right: 1.5rem;
+    }
+
+    &__home {
+      height: 2.5rem;
+      width: 2.5rem;
+    }
+
+    &__social-item {
+      margin-left: 1.5rem;
+    }
+  }
+}
+
+@include breakpoint($xxl) {
+  .navbar {
+    &__link-item {
+      margin-right: 2rem;
+    }
+
+    &__social-item {
+      margin-left: 2rem;
     }
   }
 }

@@ -1,18 +1,8 @@
 @import 'variables';
 
-@mixin breakpoint($width, $height: null) {
-  @if ($width and $height) {
-    @media (min-height: $height) and (min-width: $width) {
-      @content;
-    }
-  } @else if $width {
-    @media (min-width: $width) {
-      @content;
-    }
-  } @else {
-    @media (min-height: $height) {
-      @content;
-    }
+@mixin breakpoint($width) {
+  @media (min-width: $width) {
+    @content;
   }
 }
 
