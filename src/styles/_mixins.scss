@@ -12,8 +12,18 @@
 
 @mixin container() {
   background-color: $dark-gray;
-  border-radius: 2rem;
-  padding: 4rem;
+  border-radius: 1rem;
+  padding: 1.5rem;
+
+  @include breakpoint($s) {
+    border-radius: 1.5rem;
+    padding: 3rem;
+  }
+
+  @include breakpoint($m) {
+    border-radius: 2rem;
+    padding: 4rem;
+  }
 }
 
 @mixin diagonal-gradient($a, $b) {

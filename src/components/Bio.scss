@@ -1,21 +1,18 @@
 @import 'mixins';
 
 .bio {
-  display: flex;
   margin-bottom: 4rem;
 
   &__image-container {
-    border-radius: 1rem;
-    margin-right: 4rem;
-  }
-
-  &__image {
-    border-radius: 1rem;
-    width: 20rem;
+    display: none;
   }
 
   &__text {
     @include container();
+  }
+
+  &__heading {
+    text-align: center;
   }
 
   &__contact {
@@ -24,7 +21,7 @@
     color: #4dabf7;
     cursor: pointer;
     font-family: $nunito;
-    font-size: 1.1rem;
+    font-size: inherit;
     font-weight: bold;
     outline: none;
     padding: 0;
@@ -38,7 +35,7 @@
 
   &__resume-wrapper {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
   }
 
   &__resume {
@@ -48,7 +45,7 @@
     color: white;
     display: inline-block;
     font-family: $fira-mono;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 500;
     margin-top: 1rem;
     outline: none;
@@ -65,6 +62,41 @@
 
     &:active {
       transform: translateY(0.2rem);
+    }
+  }
+
+  @include breakpoint($s) {
+    &__heading {
+      text-align: left;
+    }
+
+    &__resume-wrapper {
+      justify-content: flex-end;
+    }
+
+    &__resume {
+      font-size: 1.25rem;
+    }
+  }
+
+  @include breakpoint($m) {
+    &__resume {
+      font-size: 1.5rem;
+    }
+  }
+
+  @include breakpoint($xl) {
+    display: flex;
+
+    &__image-container {
+      display: block;
+      margin-right: 4rem;
+    }
+
+    &__image {
+      border-radius: 1rem;
+      display: inline-block;
+      width: 20rem;
     }
   }
 }

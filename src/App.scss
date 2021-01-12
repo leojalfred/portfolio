@@ -7,6 +7,10 @@
 
   @include breakpoint($s) {
     margin-top: 6rem;
+    padding: 0 4rem;
+  }
+
+  @include breakpoint($m) {
     padding: 0 6rem;
   }
 }

@@ -11,7 +11,7 @@ export default function Bio({ bio, contact }) {
       </div>
 
       <div className="bio__text">
-        <h2>About me</h2>
+        <h2 className="bio__heading">About me</h2>
         <p>
           I’m currently a junior at the University of Minnesota, Twin Cities,
           where I maintain a 3.92 GPA pursuing a dual degree with a BS in
