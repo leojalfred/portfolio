@@ -1,11 +1,9 @@
 @import 'mixins';
 
 .portfolio {
-  display: grid;
-  gap: 2rem;
-  grid-template: 1fr / repeat(6, 1fr);
   margin-bottom: 4rem;
   @include container();
+  padding: 3rem 1.5rem;
 
   &__heading {
     text-align: center;
@@ -16,6 +14,10 @@
     display: flex;
     justify-content: center;
     transition: transform $time;
+
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
 
     &:hover {
       transform: scale(1.1, 1.1);
@@ -45,5 +47,23 @@
   &__image {
     width: 8rem;
     @include drop-shadow(rgba(black, 0.75));
+  }
+
+  @include breakpoint($s) {
+    display: grid;
+    gap: 4rem 2rem;
+    grid-template-columns: repeat(2, 1fr);
+
+    &__item:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+
+  @include breakpoint($m) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include breakpoint($xl) {
+    grid-template-columns: repeat(6, 1fr);
   }
 }
