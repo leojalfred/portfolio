@@ -10,8 +10,8 @@ export default function Skills({ reference }) {
       { name: 'Bash', tags: [] },
       { name: 'Big data', tags: ['data', 'technical'] },
       { name: 'Bootstrap', tags: ['design'] },
-      { name: 'C', tags: ['general-purpose', 'low-level'] },
-      { name: 'C++', tags: ['general-purpose', 'low-level'] },
+      { name: 'C', tags: ['low-level'] },
+      { name: 'C++', tags: ['low-level'] },
       { name: 'CSS3', tags: ['client-side', 'design'] },
       { name: 'Data architecture', tags: ['data', 'technical'] },
       { name: 'Database management', tags: ['data', 'technical'] },
@@ -20,42 +20,33 @@ export default function Skills({ reference }) {
       { name: 'Git', tags: [] },
       { name: 'HTML5', tags: ['client-side'] },
       { name: 'InVision', tags: ['design'] },
-      { name: 'Java', tags: ['general-purpose'] },
-      {
-        name: 'JavaScript',
-        tags: ['general-purpose', 'client-side', 'scripting'],
-      },
+      { name: 'Java', tags: [] },
+      { name: 'JavaScript', tags: ['client-side', 'scripting'] },
       { name: 'jQuery', tags: ['client-side'] },
       { name: 'JSON', tags: ['data'] },
       { name: 'MATLAB', tags: ['math'] },
-      { name: 'MongoDB', tags: ['data', 'document-based'] },
-      {
-        name: 'Mongoose',
-        tags: ['data', 'document-based', 'server-side'],
-      },
+      { name: 'MongoDB', tags: ['data'] },
+      { name: 'Mongoose', tags: ['data', 'server-side'] },
       { name: 'Node.js', tags: ['scripting', 'server-side'] },
-      { name: 'NoSQL', tags: ['data', 'document-based'] },
+      { name: 'NoSQL', tags: ['data'] },
       { name: 'OCaml', tags: [] },
-      { name: 'PHP', tags: ['general-purpose', 'scripting', 'server-side'] },
-      { name: 'PostgreSQL', tags: ['data', 'relational'] },
+      { name: 'PHP', tags: ['scripting', 'server-side'] },
+      { name: 'PostgreSQL', tags: ['data'] },
       { name: 'Project management', tags: ['technical'] },
       { name: 'Prototyping', tags: ['design', 'technical'] },
-      {
-        name: 'Python',
-        tags: ['general-purpose', 'scripting'],
-      },
+      { name: 'Python', tags: ['scripting'] },
       {
         name: 'Quantitative analysis',
         tags: ['math', 'statistics', 'technical'],
       },
       { name: 'R', tags: ['math', 'statistics'] },
       { name: 'Rails', tags: ['server-side'] },
-      { name: 'React', tags: ['client-side', 'state-management'] },
-      { name: 'Redux', tags: ['state-management'] },
+      { name: 'React', tags: ['client-side'] },
+      { name: 'Redux', tags: [] },
       { name: 'Responsive design', tags: ['design', 'technical'] },
-      { name: 'Ruby', tags: ['general-purpose', 'scripting'] },
+      { name: 'Ruby', tags: ['scripting'] },
       { name: 'Sass', tags: ['design', 'scripting'] },
-      { name: 'SQL', tags: ['data', 'relational'] },
+      { name: 'SQL', tags: ['data'] },
       { name: 'UX/UI', tags: ['design', 'technical'] },
       { name: 'Web design', tags: ['design', 'technical'] },
       { name: 'WordPress', tags: [] },
@@ -87,19 +78,15 @@ export default function Skills({ reference }) {
   }, [activeSkillTags])
 
   const skillTags = {
-    'client-side': { ref: useRef(null), text: 'Client side' },
-    data: { ref: useRef(null), text: 'Data' },
-    design: { ref: useRef(null), text: 'Design' },
-    'document-based': { ref: useRef(null), text: 'Document based' },
-    'general-purpose': { ref: useRef(null), text: 'General purpose' },
-    'low-level': { ref: useRef(null), text: 'Low level' },
-    math: { ref: useRef(null), text: 'Math' },
-    relational: { ref: useRef(null), text: 'Relational' },
-    scripting: { ref: useRef(null), text: 'Scripting' },
-    'server-side': { ref: useRef(null), text: 'Server side' },
-    'state-management': { ref: useRef(null), text: 'State management' },
-    statistics: { ref: useRef(null), text: 'Statistics' },
-    technical: { ref: useRef(null), text: 'Technical' },
+    'client-side': { ref: useRef(), text: 'Client-side' },
+    data: { ref: useRef(), text: 'Data' },
+    design: { ref: useRef(), text: 'Design' },
+    'low-level': { ref: useRef(), text: 'Low-level' },
+    math: { ref: useRef(), text: 'Math' },
+    scripting: { ref: useRef(), text: 'Scripting' },
+    'server-side': { ref: useRef(), text: 'Server-side' },
+    statistics: { ref: useRef(), text: 'Statistics' },
+    technical: { ref: useRef(), text: 'Technical' },
   }
 
   const handleFilter = key => () => {
@@ -130,6 +117,7 @@ export default function Skills({ reference }) {
         <div className="skills__filters">
           <div className="skills__filters-wrapper">{skillFilters}</div>
         </div>
+        <div className="skills__separator"> </div>
         <div className="skills__skills">{displayedSkills}</div>
       </div>
     </div>

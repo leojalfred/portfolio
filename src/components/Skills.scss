@@ -4,15 +4,6 @@
   margin-bottom: 4rem;
   @include container();
 
-  &__main {
-    display: flex;
-  }
-
-  &__filters {
-    flex: 3;
-    margin-right: 4rem;
-  }
-
   &__filters-wrapper {
     margin: 0 -0.75rem -0.75rem 0;
   }
@@ -24,7 +15,7 @@
     color: $dark-gray;
     cursor: pointer;
     font-family: $fira-mono;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: bold;
     line-height: 1;
     margin: 0 0.75rem 0.75rem 0;
@@ -53,25 +44,67 @@
     }
   }
 
+  &__separator {
+    background-color: $darkish-gray;
+    height: 0.2rem;
+    margin: 2rem 0;
+  }
+
   &__skills {
-    flex: 4;
     margin: 0 -0.5rem -0.5rem 0;
   }
 
   &__skill {
     border: 0.15rem solid;
-    border-radius: 1rem;
+    border-radius: 2rem;
     display: inline-block;
     font-family: $fira-mono;
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin: 0 0.5rem 0.5rem 0;
     padding: 0.25rem 1rem;
+    text-align: center;
 
     @for $i from 1 through length($colors) {
       &:nth-child(12n + #{$i}) {
         $color: nth($colors, $i);
         border-color: $color;
       }
+    }
+  }
+
+  @include breakpoint($s) {
+    &__tag,
+    &__skill {
+      font-size: 1rem;
+    }
+  }
+
+  @include breakpoint($xl) {
+    &__main {
+      display: flex;
+    }
+
+    &__filters {
+      flex: 3;
+      margin-right: 2rem;
+    }
+
+    &__separator {
+      display: none;
+    }
+
+    &__skills {
+      flex: 5;
+    }
+  }
+
+  @include breakpoint($xxl) {
+    &__filters {
+      flex: 3;
+    }
+
+    &__skills {
+      flex: 7;
     }
   }
 }
