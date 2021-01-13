@@ -11,10 +11,6 @@
     @include container();
   }
 
-  &__heading {
-    text-align: center;
-  }
-
   &__contact {
     background-color: transparent;
     border: none;
@@ -35,7 +31,7 @@
 
   &__resume-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
   }
 
   &__resume {
@@ -49,7 +45,7 @@
     font-weight: 500;
     margin-top: 1rem;
     outline: none;
-    padding: 0.75rem 2rem;
+    padding: 0.5rem 1.25rem;
     text-align: right;
     transition: background-color $time, box-shadow 0.4s, transform $time;
     @include button-shadow(black);
@@ -66,16 +62,9 @@
   }
 
   @include breakpoint($s) {
-    &__heading {
-      text-align: left;
-    }
-
-    &__resume-wrapper {
-      justify-content: flex-end;
-    }
-
     &__resume {
       font-size: 1.25rem;
+      padding: 0.75rem 2rem;
     }
   }
 
