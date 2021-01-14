@@ -17,12 +17,14 @@ export default function Experience({ reference }) {
               </div>
               <div className="experience__date">
                 Sep 2018
-                <br />–<br />
+                <br className="experience__break" /> –{' '}
+                <br className="experience__break" />
                 ⁠Present
               </div>
             </div>
 
             <div className="experience__body">
+              <hr className="experience__rule" />
               <p className="experience__text">
                 I've always had a lot of interests, so it was hard to choose my
                 educational focus. After a lot of thought and some maneuvering,
@@ -56,7 +58,8 @@ export default function Experience({ reference }) {
             <div className="experience__topline">
               <div className="experience__date">
                 Sep 2014
-                <br />–<br />
+                <br className="experience__break" /> –{' '}
+                <br className="experience__break" />
                 Jan 2018
               </div>
               <div className="experience__headings">
@@ -65,16 +68,19 @@ export default function Experience({ reference }) {
               </div>
             </div>
 
-            <p className="experience__body experience__text">
-              Throughout my high school experience, I always loved to challenge
-              myself with difficult classes, while still pursuing my personal
-              interests to the best of my ability. I graduated in the top 4% of
-              my class, maintaining a 4.76 weighted GPA and a 4.0 unweighted
-              GPA. Some of my favorite classes included AP Physics 2,
-              Multivariable and Vector Calculus Honors, AP United States
-              Government and Politics, Humanities: Search Honors, and Spanish 4
-              Honors.
-            </p>
+            <div className="experience__body">
+              <hr className="experience__rule" />
+              <p className="experience__text">
+                Throughout my high school experience, I always loved to
+                challenge myself with difficult classes, while still pursuing my
+                personal interests to the best of my ability. I graduated in the
+                top 4% of my class, maintaining a 4.76 weighted GPA and a 4.0
+                unweighted GPA. Some of my favorite classes included AP Physics
+                2, Multivariable and Vector Calculus Honors, AP United States
+                Government and Politics, Humanities: Search Honors, and Spanish
+                4 Honors.
+              </p>
+            </div>
           </div>
         </div>
 
@@ -88,12 +94,14 @@ export default function Experience({ reference }) {
               </div>
               <div className="experience__date">
                 May 2020
-                <br />–<br />
+                <br className="experience__break" /> –{' '}
+                <br className="experience__break" />
                 ⁠Present
               </div>
             </div>
 
             <div className="experience__body">
+              <hr className="experience__rule" />
               <p className="experience__text">
                 I recently cofounded Hetchie, a company that extracts insights
                 from data to streamline law school on-campus interview
@@ -121,7 +129,8 @@ export default function Experience({ reference }) {
             <div className="experience__topline">
               <div className="experience__date">
                 May 2020
-                <br />–<br />
+                <br className="experience__break" /> –{' '}
+                <br className="experience__break" />
                 Aug 2020
               </div>
               <div className="experience__headings">
@@ -130,16 +139,20 @@ export default function Experience({ reference }) {
               </div>
             </div>
 
-            <p className="experience__body experience__text">
-              After my sophomore year, I worked as an independent contractor
-              producing unique WordPress themes for major companies including
-              Medtronic and Charles Schwab through Pixelsmith, a local web
-              development firm. Although I operated with some autonomy, I often
-              interfaced with the project management team to translate client
-              needs into robust, platform agnostic websites. The rest of my job
-              consisted of modernizing and documenting legacy JavaScript and PHP
-              codebases to ease future maintenance and reduce development costs.
-            </p>
+            <div className="experience__body">
+              <hr className="experience__rule" />
+              <p className="experience__text">
+                After my sophomore year, I worked as an independent contractor
+                producing unique WordPress themes for major companies including
+                Medtronic and Charles Schwab through Pixelsmith, a local web
+                development firm. Although I operated with some autonomy, I
+                often interfaced with the project management team to translate
+                client needs into robust, platform agnostic websites. The rest
+                of my job consisted of modernizing and documenting legacy
+                JavaScript and PHP codebases to ease future maintenance and
+                reduce development costs.
+              </p>
+            </div>
           </div>
 
           <span className="experience__line"></span>
@@ -152,12 +165,14 @@ export default function Experience({ reference }) {
               </div>
               <div className="experience__date">
                 Jun 2019
-                <br />–<br />
+                <br className="experience__break" /> –{' '}
+                <br className="experience__break" />
                 ⁠Mar 2020
               </div>
             </div>
 
             <div className="experience__body">
+              <hr className="experience__rule" />
               <p className="experience__text">
                 For my summer break after freshman year, I interned as a
                 software engineer for Considdr, an AI-powered search engine
@@ -191,19 +206,24 @@ export default function Experience({ reference }) {
               </div>
               <div className="experience__date">
                 Feb 2018
-                <br />–<br />
+                <br className="experience__break" /> –{' '}
+                <br className="experience__break" />
                 Apr 2018
               </div>
             </div>
 
-            <p className="experience__body experience__text">
-              Eager to apply my web development skills to the political world, I
-              volunteered to design the campaign's web presence, organize
-              content, and direct social media integration to promote Rich
-              Wright's bid to represent Minnesota's 1st congressional district.
-              My work was largely comprised of customizing WordPress themes,
-              font pairings, and page layouts to increase voter engagement.
-            </p>
+            <div className="experience__body">
+              <hr className="experience__rule" />
+              <p className="experience__text">
+                Eager to apply my web development skills to the political world,
+                I volunteered to design the campaign's web presence, organize
+                content, and direct social media integration to promote Rich
+                Wright's bid to represent Minnesota's 1st congressional
+                district. My work was largely comprised of customizing WordPress
+                themes, font pairings, and page layouts to increase voter
+                engagement.
+              </p>
+            </div>
           </div>
 
           <span className="experience__line"></span>
@@ -212,7 +232,8 @@ export default function Experience({ reference }) {
             <div className="experience__topline">
               <div className="experience__date">
                 Nov 2016
-                <br />–<br />
+                <br className="experience__break" /> –{' '}
+                <br className="experience__break" />
                 May 2018
               </div>
               <div className="experience__headings">
@@ -223,16 +244,20 @@ export default function Experience({ reference }) {
               </div>
             </div>
 
-            <p className="experience__body experience__text">
-              Much of my initial design, web development, and project management
-              training came from my time as a student at BDPA SMN, where I
-              participated in weekly classes and annual national competitions.
-              Looking to give back in my later high school years, I volunteered
-              as a student teacher, composing curriculum for and teaching web
-              development technologies to classes of up to 50 students. Apart
-              from lectures, I mentored students individually to solidify their
-              subject matter comprehension and increase knowledge retention.
-            </p>
+            <div className="experience__body">
+              <hr className="experience__rule" />
+              <p className="experience__text">
+                Much of my initial design, web development, and project
+                management training came from my time as a student at BDPA SMN,
+                where I participated in weekly classes and annual national
+                competitions. Looking to give back in my later high school
+                years, I volunteered as a student teacher, composing curriculum
+                for and teaching web development technologies to classes of up
+                to 50 students. Apart from lectures, I mentored students
+                individually to solidify their subject matter comprehension and
+                increase knowledge retention.
+              </p>
+            </div>
           </div>
         </div>
       </div>

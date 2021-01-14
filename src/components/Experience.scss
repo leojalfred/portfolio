@@ -3,16 +3,9 @@
 .experience {
   margin-bottom: 4rem;
 
-  &__categories {
-    display: grid;
-    gap: 4rem;
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
-  }
-
   &__category {
-    grid-column-end: span 2;
-    max-width: 27rem;
+    margin: 0 auto 4rem auto;
+    max-width: 36rem;
 
     &--education {
       > .experience__group {
@@ -71,12 +64,6 @@
         background-image: linear-gradient($cyan, $lime);
       }
     }
-
-    &:last-child {
-      &:nth-child(2n - 1) {
-        grid-column-start: 2;
-      }
-    }
   }
 
   &__heading {
@@ -95,54 +82,51 @@
 
   &__topline {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 2rem;
+    flex-direction: column;
   }
 
   &__headings {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    margin: 0 2rem 0 0;
-    padding: 2rem 0 0 2rem;
-
-    &:last-child {
-      margin: 0 0 0 2rem;
-      padding: 2rem 2rem 0 0;
-    }
+    margin: 1.5rem 1.5rem 0 1.5rem;
   }
 
   &__h4 {
-    font-size: 1.2rem;
+    font-size: 1.125rem;
     margin: 0;
     text-transform: uppercase;
   }
 
   &__h5 {
+    font-size: 0.9rem;
     margin: 0.5rem 0 0 0;
     text-transform: uppercase;
   }
 
   &__date {
-    align-items: center;
-    border-radius: 1rem 0;
-    display: flex;
+    border-radius: 1rem 1rem 0 0;
     font-family: $fira-mono;
     font-size: 0.9rem;
     font-weight: 500;
-    justify-content: center;
-    height: 6rem;
-    min-width: 6rem;
+    order: -1;
+    padding: 1rem 0;
     text-align: center;
+  }
 
-    &:last-child {
-      border-radius: 0 1rem;
-    }
+  &__break {
+    display: none;
   }
 
   &__body {
-    font-size: 1rem;
-    padding: 0 2rem 2rem 2rem;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+  }
+
+  &__rule {
+    background-color: $darkish-gray;
+    border: none;
+    height: 3px;
+    margin: 1.5rem 0;
   }
 
   &__text:last-child {
@@ -154,5 +138,84 @@
     height: 4rem;
     margin-left: calc(50% - 0.25rem);
     width: 0.25rem;
+  }
+
+  @include breakpoint($s) {
+    &__topline {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__headings {
+      margin: 0 2rem 0 0;
+      padding: 2rem 0 0 2rem;
+
+      &:last-child {
+        margin: 0 0 0 2rem;
+        padding: 2rem 2rem 0 0;
+      }
+    }
+
+    &__date {
+      align-items: center;
+      border-radius: 1rem 0;
+      display: flex;
+      height: 6rem;
+      justify-content: center;
+      min-width: 6rem;
+      order: initial;
+      padding: 0;
+
+      &:last-child {
+        border-radius: 0 1rem;
+      }
+    }
+
+    &__break {
+      display: inline;
+    }
+
+    &__body {
+      padding: 0 2rem 2rem 2rem;
+    }
+
+    &__rule {
+      margin: 2rem 0 1.625rem 0;
+    }
+  }
+
+  @include breakpoint($l) {
+    &__categories {
+      display: grid;
+      gap: 4rem;
+      grid-template-columns: repeat(4, 1fr);
+      justify-items: center;
+    }
+
+    &__category {
+      grid-column-end: span 2;
+      margin: 0;
+      max-width: 27rem;
+
+      &:last-child:nth-child(2n - 1) {
+        grid-column-start: 2;
+      }
+    }
+  }
+
+  @include breakpoint($xxxl) {
+    &__categories {
+      gap: initial;
+      grid-template-columns: repeat(3, 1fr);
+      justify-items: center;
+    }
+
+    &__category {
+      grid-column-end: initial;
+
+      &:last-child:nth-child(2n - 1) {
+        grid-column-start: initial;
+      }
+    }
   }
 }
