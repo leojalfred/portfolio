@@ -21,6 +21,9 @@
     "react-scripts": "4.0.1"
   },
   "description": "Leo Alfred's personal portfolio website",
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  },
   "eslintConfig": {
     "env": {
       "browser": true,
@@ -33,8 +36,13 @@
   "license": "UNLICENSED",
   "name": "portfolio",
   "scripts": {
-    "build": "react-scripts build",
-    "start": "react-scripts start"
+    "begin": "yarn build && yarn move",
+    "build": "(if exist build rmdir /q /s build) && react-scripts build",
+    "deploy": "yarn begin && cd ../production && git add . && git commit -m \"Deploy\" && git push origin master",
+    "move": "(robocopy build ../production /s /purge /xf CNAME /xd .git) & exit 0",
+    "production": "yarn begin && http-server ../production",
+    "start": "react-scripts start",
+    "tunnel": "ngrok http --host-header=rewrite 3000"
   },
   "version": "1.0.0"
 }
