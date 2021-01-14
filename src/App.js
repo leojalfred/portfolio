@@ -31,7 +31,7 @@ export default function App() {
         <Skills reference={skills} />
         <Portfolio reference={portfolio} />
         <Experience reference={experience} />
-        {/* <Contact reference={contact} /> */}
+        <Contact reference={contact} />
       </div>
     </>
   )

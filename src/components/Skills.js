@@ -17,6 +17,7 @@ export default function Skills({ reference }) {
       { name: 'Database management', tags: ['data', 'technical'] },
       { name: 'Elasticsearch', tags: [] },
       { name: 'Express', tags: ['server-side'] },
+      { name: 'Full stack development', tags: ['technical'] },
       { name: 'Git', tags: [] },
       { name: 'HTML5', tags: ['client-side'] },
       { name: 'InVision', tags: ['design'] },

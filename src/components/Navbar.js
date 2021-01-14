@@ -22,15 +22,17 @@ export default function Navbar({
 
       document.body.classList.add('overlayed')
     } else {
-      setOpen(false)
+      if (overlay.current.classList.contains('overlay--visible')) {
+        setOpen(false)
 
-      overlay.current.classList.remove('overlay--visible')
-      setTimeout(
-        () => overlay.current.classList.remove('overlay--displayed'),
-        200
-      )
+        overlay.current.classList.remove('overlay--visible')
+        setTimeout(
+          () => overlay.current.classList.remove('overlay--displayed'),
+          200
+        )
 
-      document.body.classList.remove('overlayed')
+        document.body.classList.remove('overlayed')
+      }
     }
   }
 
@@ -65,7 +67,10 @@ export default function Navbar({
   const desktopLinks = getLinks('navbar')
   const mobileLinks = getLinks('overlay')
 
-  const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' })
+  const scrollToTop = () => {
+    handleToggle(false)
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
 
   const socialObjects = [
     { href: 'https://www.linkedin.com/in/leojalfred/', icon: 'linkedin' },
