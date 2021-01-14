@@ -36,14 +36,6 @@ export default function Navbar({
     }
   }
 
-  const mobileScrollTo = ref => () => {
-    handleToggle(false)
-
-    const top =
-      ref.current.getBoundingClientRect().top + window.pageYOffset - 96
-    window.scrollTo({ top, behavior: 'smooth' })
-  }
-
   const linkObjects = [
     { ref: bio, text: 'Bio' },
     { ref: skills, text: 'Skills' },
@@ -55,7 +47,7 @@ export default function Navbar({
     const links = linkObjects.map(({ ref, text }, i) => (
       <div
         className={`${prefix}__link-item link-item`}
-        onClick={prefix === 'navbar' ? scrollTo(ref) : mobileScrollTo(ref)}
+        onClick={scrollTo(ref, () => handleToggle(false))}
         key={i}
       >
         {text}
@@ -66,11 +58,6 @@ export default function Navbar({
   }
   const desktopLinks = getLinks('navbar')
   const mobileLinks = getLinks('overlay')
-
-  const scrollToTop = () => {
-    handleToggle(false)
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-  }
 
   const socialObjects = [
     { href: 'https://www.linkedin.com/in/leojalfred/', icon: 'linkedin' },
@@ -102,7 +89,7 @@ export default function Navbar({
           className="navbar__home"
           src={profile}
           alt="Home"
-          onClick={scrollToTop}
+          onClick={scrollTo(null, () => handleToggle(false))}
         />
         {desktopSocials}
         <Hamburger toggled={isOpen} toggle={setOpen} onToggle={handleToggle} />

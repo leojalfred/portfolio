@@ -53,6 +53,13 @@ a {
   }
 }
 
+img,
+a,
+button,
+.hamburger-react {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 @include breakpoint($s) {
   body {
     font-size: 1rem;

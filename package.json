@@ -13,6 +13,7 @@
     ]
   },
   "dependencies": {
+    "animated-scroll-to": "^2.0.12",
     "hamburger-react": "^2.4.0",
     "node-sass": "4.14.1",
     "react": "^17.0.1",
@@ -31,10 +32,9 @@
   },
   "license": "UNLICENSED",
   "name": "portfolio",
-  "private": true,
   "scripts": {
     "build": "react-scripts build",
     "start": "react-scripts start"
   },
-  "version": "0.0.0"
+  "version": "1.0.0"
 }
