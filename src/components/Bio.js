@@ -1,5 +1,5 @@
 import './Bio.scss'
-import leo from '../images/leo.jpg'
+import profile from '../images/profile.jpg'
 import scrollTo from '../utils/scrollTo'
 import resume from '../documents/resume.pdf'
 
@@ -7,7 +7,7 @@ export default function Bio({ bio, contact }) {
   return (
     <div className="bio" ref={bio}>
       <div className="bio__image-container">
-        <img className="bio__image" src={leo} alt="Leo" />
+        <img className="bio__image" src={profile} alt="Leo" />
       </div>
 
       <div className="bio__text">
@@ -33,7 +33,7 @@ export default function Bio({ bio, contact }) {
         </p>
         <p>
           Whether you need someone to develop entire applications solo or
-          integrate seamlessly into a team, with 7 years of series development
+          integrate seamlessly into a team, with 7 years of serious development
           experience under my belt, I'm your guy. I'm proficient in full-stack
           development, quantitative analysis, user experience and user interface
           design, web design, and project management. I have practice with many

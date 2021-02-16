@@ -183,7 +183,7 @@ export default function Experience({ reference }) {
               <p className="experience__text">
                 In my time as an intern, and later as a full stack developer, I
                 led the application's front end development using HTML, CSS, and
-                JavaScript. My principal acheivement was the redevelopment of
+                JavaScript. My principal achievement was the redevelopment of
                 the entirety of the main site's markup and styling, producing a
                 responsive, cross-platform layout. I also picked up valuable
                 user experience skills through conducting user interviews and
