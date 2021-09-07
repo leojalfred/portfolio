@@ -31,7 +31,7 @@ export default function Banner() {
     <div className="banner">
       <div className="banner__text">
         <h1 className="banner__heading">Hey, I'm Leo.</h1>
-        <h1 className="banner__heading">I create things.</h1>
+        <h1 className="banner__heading">I bring ideas to life.</h1>
       </div>
 
       <div className="banner__tech">{squares}</div>

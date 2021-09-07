@@ -6,6 +6,7 @@
 
   &__text {
     text-align: center;
+    margin-bottom: 2rem;
   }
 
   &__heading {
@@ -102,7 +103,7 @@
       }
 
       &:nth-child(14) {
-        @include diagonal-gradient($gray, $blue);
+        @include diagonal-gradient($blue, $teal);
       }
 
       &:nth-child(15) {
