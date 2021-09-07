@@ -18,7 +18,7 @@
       }
 
       > .experience__line {
-        background-image: linear-gradient($pink, $grape);
+        background-image: linear-gradient($indigo, $cyan);
       }
     }
 
@@ -39,11 +39,11 @@
 
       > .experience__line {
         &:first-of-type {
-          background-image: linear-gradient($orange, $yellow);
+          background-image: linear-gradient($teal, $green);
         }
 
         &:nth-of-type(2) {
-          background-image: linear-gradient($lime, $teal);
+          background-image: linear-gradient($pink, $orange);
         }
       }
     }
@@ -60,7 +60,7 @@
       }
 
       > .experience__line {
-        background-image: linear-gradient($cyan, $lime);
+        background-image: linear-gradient($yellow, $red);
       }
     }
   }
