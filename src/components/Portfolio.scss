@@ -27,43 +27,69 @@
       transform: scale(1.1, 1.1) translateY(0.2rem);
     }
 
-    &--considdr > .portfolio__image {
-      width: 6rem;
-    }
-
     &--hetchie > .portfolio__image {
-      width: 4rem;
+      width: 5.5rem;
     }
 
-    &--schwab > .portfolio__image {
-      width: 4.5rem;
+    &--comport > .portfolio__image {
+      width: 11rem;
     }
 
     &--stimrouter > .portfolio__image {
-      width: 8.5rem;
+      width: 10rem;
+    }
+
+    &--considdr > .portfolio__image {
+      width: 6.5rem;
+    }
+
+    &--schwab > .portfolio__image {
+      width: 5rem;
     }
   }
 
   &__image {
-    width: 8rem;
+    width: 9rem;
     @include drop-shadow(rgba(black, 0.75));
   }
 
   @include breakpoint($s) {
     display: grid;
     gap: 4rem 2rem;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 
-    &__item:not(:last-child) {
-      margin-bottom: 0;
+    &__item {
+      grid-column: span 2;
+
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+
+      &:last-child {
+        grid-column-end: 4;
+      }
     }
   }
 
-  @include breakpoint($m) {
-    grid-template-columns: repeat(3, 1fr);
+  @include breakpoint($l) {
+    grid-template-columns: repeat(6, 1fr);
+
+    &__item:last-child {
+      grid-column-end: 5;
+    }
   }
 
   @include breakpoint($xl) {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+
+    &__item {
+      &:nth-child(5) {
+        grid-column-end: 4;
+      }
+
+      &:last-child {
+        grid-column-end: inherit;
+      }
+    }
   }
 }
