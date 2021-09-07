@@ -13,9 +13,9 @@ export default function Bio({ bio, contact }) {
       <div className="bio__text">
         <h2 className="bio__heading">About me</h2>
         <p>
-          I’m currently a junior at the University of Minnesota, Twin Cities,
-          where I maintain a 3.92 GPA pursuing a dual degree with a BS in
-          computer science and a BA in political science and statistics.
+          I’m currently finishing my last semester at the University of
+          Minnesota, Twin Cities, where I maintain a 3.93 GPA pursuing a BS in
+          computer science with minors in statistics and political science.
         </p>
         <p>
           I'm passionate about applying technology and quantitative analysis to
@@ -25,7 +25,7 @@ export default function Bio({ bio, contact }) {
           <a href="https://www.hetchie.com/" target="_blank" rel="noreferrer">
             Hetchie Co.
           </a>{' '}
-          alongside USC Law students, a platform that analyzes data to
+          alongside two USC Law students, a platform that analyzes data to
           streamline the law school on-campus interview process. I keep busy
           handling its overall management, data architecture, design,
           development, deployment, maintenance, and everything else related to
@@ -33,7 +33,7 @@ export default function Bio({ bio, contact }) {
         </p>
         <p>
           Whether you need someone to develop entire applications solo or
-          integrate seamlessly into a team, with 7 years of serious development
+          integrate seamlessly into a team, with over 7 years of serious
           experience under my belt, I'm your guy. I'm proficient in full-stack
           development, quantitative analysis, user experience and user interface
           design, web design, and project management. I have practice with many
