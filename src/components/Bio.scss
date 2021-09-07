@@ -77,9 +77,13 @@
     }
 
     &__image {
-      border-radius: 1rem;
+      border-radius: 4rem 1rem;
       display: inline-block;
       width: 20rem;
+    }
+
+    &__text {
+      border-radius: 1rem 4rem;
     }
   }
 }
