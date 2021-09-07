@@ -65,8 +65,12 @@
     font-family: $fira-mono;
     font-size: 0.9rem;
     margin: 0 0.5rem 0.5rem 0;
+    max-width: calc(100% - 3rem);
+    overflow: hidden;
     padding: 0.25rem 1rem;
     text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 
     @for $i from 1 through length($colors) {
       &:nth-child(12n + #{$i}) {
