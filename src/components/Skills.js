@@ -46,7 +46,7 @@ export default function Skills({ reference }) {
       { name: 'Redux', tags: [] },
       { name: 'Responsive design', tags: ['design', 'technical'] },
       { name: 'Ruby', tags: ['scripting'] },
-      { name: 'Sass', tags: ['design', 'scripting'] },
+      { name: 'Sass', tags: ['client-side', 'design', 'scripting'] },
       { name: 'SQL', tags: ['data'] },
       { name: 'UX/UI', tags: ['design', 'technical'] },
       { name: 'Web design', tags: ['design', 'technical'] },
