@@ -18,8 +18,8 @@ export default function Bio({ bio, contact }) {
           computer science with minors in statistics and political science.
         </p>
         <p>
-          I'm passionate about applying technology and quantitative analysis to
-          solve real-world problems. When I'm not in class, I spend my time
+          I'm passionate about applying technology and design to solve
+          real-world problems. When I'm not in class, I spend my time
           researching algorithmic trading strategies and working on web
           applications. I recently cofounded{' '}
           <a href="https://www.hetchie.com/" target="_blank" rel="noreferrer">

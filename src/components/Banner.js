@@ -30,7 +30,7 @@ export default function Banner() {
   return (
     <div className="banner">
       <div className="banner__text">
-        <h1 className="banner__heading">Hey, I'm Leo.</h1>
+        <h1 className="banner__heading">Hi, I'm Leo.</h1>
         <h1 className="banner__heading">I bring ideas to life.</h1>
       </div>
 

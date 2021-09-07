@@ -142,8 +142,8 @@ export default function Experience({ reference }) {
               <p className="experience__text">
                 In my final college internship I work as a web development
                 intern for Br8kthru, a digital marketing firm recently named the
-                best in Minneapolis by Twin Cities Business. I serve as a jack
-                of all trades, modernizing legacy codebases, improving
+                best in the Twin Cities by Twin Cities Business. I serve as a
+                jack of all trades, modernizing legacy codebases, improving
                 performance metrics, creating unique designs, and implementing
                 new features for a variety of clients. Through my work for
                 Comport, for example, I conceptualized and developed a number of
@@ -207,9 +207,10 @@ export default function Experience({ reference }) {
               <p className="experience__text">
                 For my summer break after freshman year, I interned as a
                 software engineer for Considdr, an AI-powered search engine
-                startup that returned extracted information instead of links.
-                Considdr was accepted into the 2019 MassChallenge Boston
-                program, where I was the youngest worker in the accelerator.
+                startup that distinguished itself by returning extracted
+                information instead of links. Considdr was accepted into the
+                2019 MassChallenge Boston program, where I was the youngest
+                worker in the accelerator.
               </p>
               <p className="experience__text">
                 In my time as an intern, and later as a full stack developer, I
