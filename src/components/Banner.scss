@@ -50,68 +50,17 @@
         transform: scale(1.05, 1.05);
       }
 
-      &:nth-child(1) {
-        @include diagonal-gradient($cyan, $lime);
-      }
+      $gradients: ($cyan, $lime), ($orange, $pink), ($yellow, $orange),
+        ($red, $grape), ($grape, $red), ($violet, $cyan), ($green, $yellow),
+        ($pink, $orange), ($teal, $blue), ($yellow, $green), ($red, $yellow),
+        ($cyan, $indigo), ($grape, $yellow), ($blue, $teal), ($pink, $indigo),
+        ($lime, $teal);
 
-      &:nth-child(2) {
-        @include diagonal-gradient($orange, $pink);
-      }
-
-      &:nth-child(3) {
-        @include diagonal-gradient($yellow, $orange);
-      }
-
-      &:nth-child(4) {
-        @include diagonal-gradient($red, $grape);
-      }
-
-      &:nth-child(5) {
-        @include diagonal-gradient($grape, $red);
-      }
-
-      &:nth-child(6) {
-        @include diagonal-gradient($violet, $cyan);
-      }
-
-      &:nth-child(7) {
-        @include diagonal-gradient($green, $yellow);
-      }
-
-      &:nth-child(8) {
-        @include diagonal-gradient($pink, $orange);
-      }
-
-      &:nth-child(9) {
-        @include diagonal-gradient($teal, $blue);
-      }
-
-      &:nth-child(10) {
-        @include diagonal-gradient($yellow, $green);
-      }
-
-      &:nth-child(11) {
-        @include diagonal-gradient($red, $yellow);
-      }
-
-      &:nth-child(12) {
-        @include diagonal-gradient($cyan, $indigo);
-      }
-
-      &:nth-child(13) {
-        @include diagonal-gradient($grape, $yellow);
-      }
-
-      &:nth-child(14) {
-        @include diagonal-gradient($blue, $teal);
-      }
-
-      &:nth-child(15) {
-        @include diagonal-gradient($pink, $indigo);
-      }
-
-      &:nth-child(16) {
-        @include diagonal-gradient($lime, $teal);
+      @for $i from 1 through length($gradients) {
+        &:nth-child(#{$i}) {
+          $gradient: nth($gradients, $i);
+          @include diagonal-gradient(nth($gradient, 1), nth($gradient, 2));
+        }
       }
 
       &:nth-child(8n + 5) {
