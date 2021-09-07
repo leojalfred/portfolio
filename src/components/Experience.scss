@@ -35,6 +35,10 @@
         &:nth-of-type(3) .experience__date {
           @include diagonal-gradient($orange, $pink);
         }
+
+        &:nth-of-type(4) .experience__date {
+          @include diagonal-gradient($teal, $blue);
+        }
       }
 
       > .experience__line {
@@ -45,13 +49,17 @@
         &:nth-of-type(2) {
           background-image: linear-gradient($pink, $orange);
         }
+
+        &:nth-of-type(3) {
+          background-image: linear-gradient($blue, $teal);
+        }
       }
     }
 
     &--volunteer {
       > .experience__group {
         &:first-of-type .experience__date {
-          @include diagonal-gradient($cyan, $lime);
+          @include diagonal-gradient($grape, $blue);
         }
 
         &:nth-of-type(2) .experience__date {

@@ -27,27 +27,25 @@ export default function Experience({ reference }) {
               <hr className="experience__rule" />
               <p className="experience__text">
                 I've always had a lot of interests, so it was hard to choose my
-                educational focus. After a lot of thought and some maneuvering,
-                I decided to enroll in the College of Science and Engineering in
-                addition to the College of Liberal Arts, allowing me to pursue a
-                BS in computer science and BA with a major in political science
-                and a minor in statistics.
+                educational focus. I originally enrolled in the College of
+                Liberal Arts before deciding to switch to the College of Science
+                and Engineering, which allowed me to pursue a BS in computer
+                science and minors in statistics and political science.
               </p>
               <p className="experience__text">
-                My main fascination lies in the intersection of all of those
-                fields, and I've long been intrigued by political modeling and
-                election forecasting. Last year, I was recognized for my work
+                I'm fascinated in the intersection of all of those fields, and
+                I've long been intrigued by political modeling and election
+                forecasting. In sophomore year, I was recognized for my work
                 applying quantitative analysis to explore the relationship
                 between socioeconomic status and age of entering parenthood with
                 a nomination for the William Jennings Bryan Prize.
               </p>
               <p className="experience__text">
-                I maintain a 3.92 cumulative GPA, with a 3.881 and a 3.923 in
-                computer science and political science respectively. Notable
-                recent classes include Machine Learning Fundamentals, Applied
-                Multivariate Methods, Algorithms and Data Structures, Regression
-                and Correlated Data, Quantitative Political Analysis, and
-                Advanced Programming Principles.
+                I maintain a 3.934 cumulative GPA with a 3.904 computer science
+                major GPA. Notable recent classes include Machine Learning
+                Fundamentals, Applied Multivariate Methods, Algorithms and Data
+                Structures, Regression and Correlated Data, Quantitative
+                Political Analysis, and Artificial Intelligence II.
               </p>
             </div>
           </div>
@@ -128,29 +126,31 @@ export default function Experience({ reference }) {
           <div className="experience__group">
             <div className="experience__topline">
               <div className="experience__date">
-                May 2020
+                Jun 2021
                 <br className="experience__break" /> –{' '}
                 <br className="experience__break" />
-                Aug 2020
+                Present
               </div>
               <div className="experience__headings">
-                <h4 className="experience__h4">Pixelsmith</h4>
-                <h5 className="experience__h5">Full Stack Developer</h5>
+                <h4 className="experience__h4">Br8kthru</h4>
+                <h5 className="experience__h5">Web Development Intern</h5>
               </div>
             </div>
 
             <div className="experience__body">
               <hr className="experience__rule" />
               <p className="experience__text">
-                After my sophomore year, I worked as an independent contractor
-                producing unique WordPress themes for major companies including
-                Medtronic and Charles Schwab through Pixelsmith, a local web
-                development firm. Although I operated with some autonomy, I
-                often interfaced with the project management team to translate
-                client needs into robust, platform agnostic websites. The rest
-                of my job consisted of modernizing and documenting legacy
-                JavaScript and PHP codebases to ease future maintenance and
-                reduce development costs.
+                In my final college internship I work as a web development
+                intern for Br8kthru, a digital marketing firm recently named the
+                best in Minneapolis by Twin Cities Business. I serve as a jack
+                of all trades, modernizing legacy codebases, improving
+                performance metrics, creating unique designs, and implementing
+                new features for a variety of clients. Through my work for
+                Comport, for example, I conceptualized and developed a number of
+                new components and managed to reduce load times by 43% as I
+                streamlined their outdated code. My work generally involves
+                designing solutions as part of team before implementing them
+                through a combination of HTML, CSS, JavaScript, and PHP.
               </p>
             </div>
           </div>
@@ -160,14 +160,45 @@ export default function Experience({ reference }) {
           <div className="experience__group">
             <div className="experience__topline">
               <div className="experience__headings">
-                <h4 className="experience__h4">Considdr</h4>
+                <h4 className="experience__h4">Pixelsmith</h4>
                 <h5 className="experience__h5">Full Stack Developer</h5>
               </div>
+              <div className="experience__date">
+                May 2020
+                <br className="experience__break" /> –{' '}
+                <br className="experience__break" />
+                Aug 2020
+              </div>
+            </div>
+
+            <div className="experience__body">
+              <hr className="experience__rule" />
+              <p className="experience__text">
+                After my sophomore year, I worked as an independent contractor
+                producing unique WordPress themes for major companies through
+                Pixelsmith, a local web development firm. Although I operated
+                with some autonomy, I often interfaced with the project
+                management team to translate client needs into robust, platform
+                agnostic websites. The rest of my job consisted of modernizing
+                and documenting legacy JavaScript and PHP codebases to ease
+                future maintenance and reduce development costs.
+              </p>
+            </div>
+          </div>
+
+          <span className="experience__line"></span>
+
+          <div className="experience__group">
+            <div className="experience__topline">
               <div className="experience__date">
                 Jun 2019
                 <br className="experience__break" /> –{' '}
                 <br className="experience__break" />
                 ⁠Mar 2020
+              </div>
+              <div className="experience__headings">
+                <h4 className="experience__h4">Considdr</h4>
+                <h5 className="experience__h5">Full Stack Developer</h5>
               </div>
             </div>
 
@@ -197,7 +228,7 @@ export default function Experience({ reference }) {
         </div>
 
         <div className="experience__category experience__category--volunteer">
-          <h3 className="experience__heading">Volunteer</h3>
+          <h3 className="experience__heading">Volunteering</h3>
           <div className="experience__group">
             <div className="experience__topline">
               <div className="experience__headings">
