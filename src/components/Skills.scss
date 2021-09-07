@@ -29,16 +29,20 @@
     }
 
     @for $i from 1 through length($colors) {
+      $color: nth($colors, $i);
+
       &:nth-child(12n + #{$i}) {
-        $color: nth($colors, $i);
-
-        &:hover {
-          @include button-shadow($color);
-        }
-
-        &:hover,
         &.skills__tag--active {
           background-color: $color;
+        }
+      }
+
+      &--desktop {
+        &:nth-child(12n + #{$i}) {
+          &:hover {
+            background-color: $color;
+            @include button-shadow($color);
+          }
         }
       }
     }
