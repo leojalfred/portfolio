@@ -1,11 +1,10 @@
 import './Portfolio.scss'
 import hetchie from '../images/portfolio/hetchie.png'
 import comport from '../images/portfolio/comport.png'
-import stimrouter from '../images/portfolio/stimrouter.png'
 import considdr from '../images/portfolio/considdr.png'
-import polywater from '../images/portfolio/polywater.png'
+import stimrouter from '../images/portfolio/stimrouter.png'
 import schwab from '../images/portfolio/schwab.png'
-import robland from '../images/portfolio/robland.png'
+import polywater from '../images/portfolio/polywater.png'
 
 export default function Portfolio({ reference }) {
   const itemObjects = [
@@ -22,22 +21,16 @@ export default function Portfolio({ reference }) {
       link: 'https://comport.com/',
     },
     {
-      alt: 'Stimrouter',
-      className: 'stimrouter',
-      image: stimrouter,
-      link: 'https://stimrouter.com/',
-    },
-    {
       alt: 'Considdr',
       className: 'considdr',
       image: considdr,
       link: 'https://medium.com/considdr-history',
     },
     {
-      alt: 'Polywater',
-      className: 'polywater',
-      image: polywater,
-      link: 'https://www.polywater.com/',
+      alt: 'Stimrouter',
+      className: 'stimrouter',
+      image: stimrouter,
+      link: 'https://stimrouter.com/',
     },
     {
       alt: 'Schwab Impact 2020',
@@ -46,10 +39,10 @@ export default function Portfolio({ reference }) {
       link: 'https://impact.schwab.com/',
     },
     {
-      alt: 'Robland Home Healthcare',
-      image: robland,
-      className: 'robland',
-      link: 'https://www.roblandhomehealth.com/',
+      alt: 'Polywater',
+      className: 'polywater',
+      image: polywater,
+      link: 'https://www.polywater.com/',
     },
   ]
   const items = itemObjects.map(({ alt, className, image, link }, i) =>
