@@ -1,9 +1,9 @@
-import './Portfolio.scss'
-import hetchie from '../images/portfolio/hetchie.png'
 // import comport from '../images/portfolio/comport.png'
 import considdr from '../images/portfolio/considdr.png'
-import stimrouter from '../images/portfolio/stimrouter.png'
+import hetchie from '../images/portfolio/hetchie.png'
 import schwab from '../images/portfolio/schwab.png'
+import stimrouter from '../images/portfolio/stimrouter.png'
+import './Portfolio.scss'
 // import polywater from '../images/portfolio/polywater.png'
 
 export default function Portfolio({ reference }) {

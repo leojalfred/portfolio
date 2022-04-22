@@ -1,7 +1,7 @@
-import './Bio.scss'
+import resume from '../documents/resume.pdf'
 import profile from '../images/profile.jpg'
 import scrollTo from '../utils/scrollTo'
-import resume from '../documents/resume.pdf'
+import './Bio.scss'
 
 export default function Bio({ bio, contact }) {
   return (

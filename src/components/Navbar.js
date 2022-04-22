@@ -1,8 +1,8 @@
-import { useState, useRef } from 'react'
 import Hamburger from 'hamburger-react'
-import './Navbar.scss'
-import scrollTo from '../utils/scrollTo'
+import { useRef, useState } from 'react'
 import profile from '../images/profile.jpg'
+import scrollTo from '../utils/scrollTo'
+import './Navbar.scss'
 
 export default function Navbar({
   bio,

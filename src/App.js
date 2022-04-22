@@ -1,12 +1,12 @@
 import { useRef } from 'react'
 import './App.scss'
-import Navbar from './components/Navbar'
 import Banner from './components/Banner'
 import Bio from './components/Bio'
-import Skills from './components/Skills'
-import Portfolio from './components/Portfolio'
-import Experience from './components/Experience'
 import Contact from './components/Contact'
+import Experience from './components/Experience'
+import Navbar from './components/Navbar'
+import Portfolio from './components/Portfolio'
+import Skills from './components/Skills'
 
 export default function App() {
   const bio = useRef()
