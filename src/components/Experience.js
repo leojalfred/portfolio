@@ -145,8 +145,8 @@ export default function Experience({ reference }) {
                 best in the Twin Cities by Twin Cities Business. I serve as a
                 jack of all trades, modernizing legacy codebases, improving
                 performance metrics, creating unique designs, and implementing
-                new features for a variety of clients. Through my work for
-                Comport, for example, I conceptualized and developed a number of
+                new features for a variety of clients. Through my work for one
+                client, for example, I conceptualized and developed a number of
                 new components and managed to reduce load times by 43% as I
                 streamlined their outdated code. My work generally involves
                 designing solutions as part of team before implementing them
