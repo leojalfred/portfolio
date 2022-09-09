@@ -7,7 +7,7 @@ import './Navbar.scss'
 export default function Navbar({
   bio,
   skills,
-  portfolio,
+  // portfolio,
   experience,
   contact,
 }) {
@@ -39,7 +39,7 @@ export default function Navbar({
   const linkObjects = [
     { ref: bio, text: 'Bio' },
     { ref: skills, text: 'Skills' },
-    { ref: portfolio, text: 'Portfolio' },
+    // { ref: portfolio, text: 'Portfolio' },
     { ref: experience, text: 'Experience' },
     { ref: contact, text: 'Contact' },
   ]

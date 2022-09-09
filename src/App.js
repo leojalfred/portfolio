@@ -5,13 +5,13 @@ import Bio from './components/Bio'
 import Contact from './components/Contact'
 import Experience from './components/Experience'
 import Navbar from './components/Navbar'
-import Portfolio from './components/Portfolio'
+// import Portfolio from './components/Portfolio'
 import Skills from './components/Skills'
 
 export default function App() {
   const bio = useRef()
   const skills = useRef()
-  const portfolio = useRef()
+  // const portfolio = useRef()
   const experience = useRef()
   const contact = useRef()
 
@@ -20,7 +20,7 @@ export default function App() {
       <Navbar
         bio={bio}
         skills={skills}
-        portfolio={portfolio}
+        // portfolio={portfolio}
         experience={experience}
         contact={contact}
       />
@@ -29,7 +29,7 @@ export default function App() {
         <Banner />
         <Bio bio={bio} contact={contact} />
         <Skills reference={skills} />
-        <Portfolio reference={portfolio} />
+        {/* <Portfolio reference={portfolio} /> */}
         <Experience reference={experience} />
         <Contact reference={contact} />
       </div>
