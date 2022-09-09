@@ -18,16 +18,14 @@
 
 @mixin container() {
   background-color: $dark-gray;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   padding: 1.5rem;
 
   @include breakpoint($s) {
-    border-radius: 1.5rem;
     padding: 3rem;
   }
 
   @include breakpoint($m) {
-    border-radius: 2rem;
     padding: 4rem;
   }
 }

@@ -11,7 +11,7 @@
   &__tag {
     background-color: white;
     border: none;
-    border-radius: 1rem;
+    border-radius: 0.25rem;
     color: $dark-gray;
     cursor: pointer;
     font-family: $fira-mono;
@@ -24,8 +24,12 @@
     transition: background-color $time, box-shadow 0.4s, transform $time;
     @include button-shadow(black);
 
+    &:hover {
+      transform: translateY(-0.05rem);
+    }
+
     &:active {
-      transform: translateY(0.2rem);
+      transform: translateY(0.1rem);
     }
 
     @for $i from 1 through length($colors) {
@@ -35,10 +39,8 @@
         &.skills__tag--active {
           background-color: $color;
         }
-      }
 
-      &--desktop {
-        &:nth-child(12n + #{$i}) {
+        @media (hover: hover) {
           &:hover {
             background-color: $color;
             @include button-shadow($color);
@@ -60,7 +62,7 @@
 
   &__skill {
     border: 0.15rem solid;
-    border-radius: 2rem;
+    border-radius: 0.25rem;
     display: inline-block;
     font-family: $fira-mono;
     font-size: 0.9rem;
