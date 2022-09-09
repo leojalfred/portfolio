@@ -13,37 +13,21 @@ export default function Bio({ bio, contact }) {
       <div className="bio__text">
         <h2 className="bio__heading">About me</h2>
         <p>
-          I’m currently finishing my last semester at the University of
-          Minnesota, Twin Cities, where I maintain a 3.93 GPA pursuing a BS in
-          computer science with minors in statistics and political science.
+          Whether you need someone to develop entire applications solo or
+          integrate seamlessly into a team, I’m your guy. I have eight years of
+          serious full stack development experience under my belt and a
+          significant professional background in many other areas. On a weekly
+          basis I can switch between full stack web development, mobile app
+          development, web design, UI/UX design, SEO, project and personnel
+          management, website management and maintenance, quality assurance,
+          information technology support, and general consulting.
         </p>
         <p>
           I'm passionate about applying technology and design to solve
-          real-world problems. When I'm not in class, I spend my time
-          researching algorithmic trading strategies and working on web
-          applications. I recently cofounded{' '}
-          <a href="https://www.hetchie.com/" target="_blank" rel="noreferrer">
-            Hetchie Co.
-          </a>{' '}
-          alongside two USC Law students, a platform that analyzes data to
-          streamline the law school on-campus interview process. I keep busy
-          handling its overall management, data architecture, design,
-          development, deployment, maintenance, and everything else related to
-          its technological implementation.
-        </p>
-        <p>
-          Whether you need someone to develop entire applications solo or
-          integrate seamlessly into a team, with over 7 years of serious
-          experience under my belt, I'm your guy. I'm proficient in full-stack
-          development, quantitative analysis, user experience and user interface
-          design, web design, and project management. I have practice with many
-          languages you likely work with, and I’m a fast learner when it comes
-          to new technologies.
-        </p>
-        <p>
-          I'm always looking to tackle new and intriguing technical challenges.
-          Please check out my background below, and if you think I could be of
-          help, feel free to{' '}
+          real-world problems and love to spend my time learning new skills and
+          developing websites and mobile applications. I'm always looking to
+          tackle new and intriguing technical challenges, so if you think I
+          could be of help, don’t hesitate to{' '}
           <button className="bio__contact" onClick={scrollTo(contact)}>
             reach out
           </button>
