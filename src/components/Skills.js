@@ -128,6 +128,7 @@ export default function Skills({ reference }) {
     skillFilters.push(
       <button
         className="skills__tag"
+        type="button"
         ref={skillTags[key].ref}
         onClick={handleFilter(key)}
         key={key}
