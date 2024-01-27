@@ -19,7 +19,6 @@
     font-weight: bold;
     line-height: 1;
     margin: 0 0.75rem 0.75rem 0;
-    outline: none;
     padding: 0.5rem 1rem;
     transition: background-color $time, box-shadow 0.4s, transform $time;
     @include button-shadow(black);
