@@ -4,13 +4,7 @@ import profile from '../images/profile.jpg'
 import scrollTo from '../utils/scrollTo'
 import './Navbar.scss'
 
-export default function Navbar({
-  bio,
-  skills,
-  // portfolio,
-  experience,
-  contact,
-}) {
+export default function Navbar({ bio, skills, experience, contact }) {
   const [isOpen, setOpen] = useState(false)
   const overlay = useRef()
   function handleToggle(toggled) {
@@ -39,19 +33,20 @@ export default function Navbar({
   const linkObjects = [
     { ref: bio, text: 'Bio' },
     { ref: skills, text: 'Skills' },
-    // { ref: portfolio, text: 'Portfolio' },
     { ref: experience, text: 'Experience' },
-    { ref: contact, text: 'Contact' },
+    { ref: contact, text: 'Contact' }
   ]
   const getLinks = prefix => {
     const links = linkObjects.map(({ ref, text }, i) => (
-      <div
+      <button
         className={`${prefix}__link-item link-item`}
         onClick={scrollTo(ref, () => handleToggle(false))}
+        type="button"
+        aria-label={text}
         key={i}
       >
         {text}
-      </div>
+      </button>
     ))
 
     return <div className={`${prefix}__links`}>{links}</div>
@@ -60,16 +55,22 @@ export default function Navbar({
   const mobileLinks = getLinks('overlay')
 
   const socialObjects = [
-    { href: 'https://www.linkedin.com/in/leojalfred/', icon: 'linkedin' },
-    { href: 'https://github.com/leojalfred', icon: 'github' },
+    {
+      href: 'https://www.linkedin.com/in/leojalfred/',
+      icon: 'linkedin',
+      label: 'LinkedIn'
+    },
+    { href: 'https://github.com/leojalfred', icon: 'github', label: 'GitHub' }
   ]
   const getSocials = prefix => {
-    const socials = socialObjects.map(({ href, icon }, i) => (
+    const socials = socialObjects.map(({ href, icon, label }, i) => (
       <a
         className={`${prefix}__social-item social-item`}
         href={href}
         target="_blank"
         rel="noreferrer"
+        title={label}
+        aria-label={label}
         key={i}
       >
         <i className={`fi fi-${icon}`}></i>
@@ -85,14 +86,21 @@ export default function Navbar({
     <>
       <nav className="navbar">
         {desktopLinks}
-        <img
-          className="navbar__home"
-          src={profile}
-          alt="Home"
+        <button
+          className="navbar__home-button"
           onClick={scrollTo(null, () => handleToggle(false))}
-        />
+          type="button"
+          aria-label="Home"
+        >
+          <img className="navbar__home" src={profile} alt="Home" />
+        </button>
         {desktopSocials}
-        <Hamburger toggled={isOpen} toggle={setOpen} onToggle={handleToggle} />
+        <Hamburger
+          toggled={isOpen}
+          toggle={setOpen}
+          onToggle={handleToggle}
+          label="Hamburger Menu Toggle"
+        />
       </nav>
       <nav className="overlay" ref={overlay}>
         {mobileLinks}
