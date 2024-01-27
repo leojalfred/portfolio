@@ -36,7 +36,11 @@ export default function Bio({ bio, contact }) {
         <p>
           I'm always looking to tackle new and intriguing technical challenges.
           If you think I could be of help, please{' '}
-          <button className="bio__contact" onClick={scrollTo(contact)}>
+          <button
+            className="bio__contact"
+            type="button"
+            onClick={scrollTo(contact)}
+          >
             reach out
           </button>{' '}
           for a deeper conversation.
