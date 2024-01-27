@@ -235,15 +235,15 @@ export default function Experience({ reference }) {
 
           <div className="experience__group">
             <div className="experience__topline">
+              <div className="experience__headings">
+                <h4 className="experience__h4">Considdr</h4>
+                <h5 className="experience__h5">Full Stack Developer</h5>
+              </div>
               <div className="experience__date">
                 Jun 2019
                 <br className="experience__break" /> –{' '}
                 <br className="experience__break" />
                 Apr 2020
-              </div>
-              <div className="experience__headings">
-                <h4 className="experience__h4">Considdr</h4>
-                <h5 className="experience__h5">Full Stack Developer</h5>
               </div>
             </div>
 
