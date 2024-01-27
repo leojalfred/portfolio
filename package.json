@@ -18,9 +18,9 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
-    "sass": "^1.54.9"
+    "sass": "^1.70.0"
   },
-  "description": "Leo Alfred's personal portfolio website",
+  "description": "Leo Alfred's personal resume website",
   "devDependencies": {
     "http-server": "^14.1.1"
   },
@@ -34,7 +34,7 @@
     ]
   },
   "license": "UNLICENSED",
-  "name": "portfolio",
+  "name": "resume",
   "scripts": {
     "begin": "npm run build && npm run move",
     "build": "(if exist build rmdir /q /s build) && react-scripts build",
