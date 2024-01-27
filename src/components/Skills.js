@@ -7,7 +7,8 @@ export default function Skills({ reference }) {
   useEffect(() => {
     const skills = [
       { name: 'Algorithms and data structures', tags: ['technical'] },
-      { name: 'Bash', tags: ['language'] },
+      { name: 'AWS', tags: ['backend', 'infrastructure'] },
+      { name: 'Bash', tags: ['language', 'scripting'] },
       { name: 'Big data', tags: ['data', 'technical'] },
       { name: 'Bootstrap', tags: ['design'] },
       { name: 'C', tags: ['language', 'low-level'] },
@@ -18,9 +19,12 @@ export default function Skills({ reference }) {
       { name: 'Dart', tags: ['language'] },
       { name: 'Data architecture', tags: ['data', 'technical'] },
       { name: 'Database management', tags: ['data', 'technical'] },
-      { name: 'Elasticsearch', tags: [] },
+      { name: 'Docker', tags: ['infrastructure'] },
+      { name: 'Doctrine', tags: ['data', 'server-side'] },
+      { name: 'Elasticsearch', tags: ['data'] },
       { name: 'Express', tags: ['server-side'] },
       { name: 'Figma', tags: ['design'] },
+      { name: 'Flask', tags: ['server-side'] },
       { name: 'Flutter', tags: ['mobile'] },
       { name: 'Full stack development', tags: ['technical'] },
       { name: 'Git', tags: [] },
@@ -29,10 +33,12 @@ export default function Skills({ reference }) {
       { name: 'Java', tags: ['language'] },
       { name: 'JavaScript', tags: ['language', 'client-side', 'scripting'] },
       { name: 'jQuery', tags: ['client-side'] },
-      { name: 'JSON', tags: ['data'] },
+      { name: 'Kotlin', tags: ['language', 'mobile'] },
+      { name: 'Leadership', tags: ['technical'] },
       { name: 'MATLAB', tags: ['language', 'math'] },
       { name: 'MongoDB', tags: ['data'] },
       { name: 'Mongoose', tags: ['data', 'server-side'] },
+      { name: 'Next.js', tags: ['client-side', 'server-side'] },
       { name: 'Node.js', tags: ['language', 'scripting', 'server-side'] },
       { name: 'NoSQL', tags: ['data'] },
       { name: 'OCaml', tags: ['language'] },
@@ -43,7 +49,7 @@ export default function Skills({ reference }) {
       { name: 'Python', tags: ['language', 'scripting'] },
       {
         name: 'Quantitative analysis',
-        tags: ['math', 'statistics', 'technical'],
+        tags: ['math', 'statistics', 'technical']
       },
       { name: 'R', tags: ['language', 'math', 'statistics'] },
       { name: 'Rails', tags: ['server-side'] },
@@ -54,15 +60,23 @@ export default function Skills({ reference }) {
       { name: 'Ruby', tags: ['language', 'scripting'] },
       {
         name: 'Sass',
-        tags: ['language', 'client-side', 'design', 'scripting'],
+        tags: ['language', 'client-side', 'design', 'scripting']
       },
+      { name: 'SEO', tags: ['technical'] },
       { name: 'SQL', tags: ['language', 'data'] },
+      {
+        name: 'styled-components',
+        tags: ['client-side', 'design']
+      },
       { name: 'Swift', tags: ['language', 'mobile'] },
+      { name: 'Teamwork', tags: ['technical'] },
+      { name: 'Terraform', tags: ['infrastructure'] },
+      { name: 'TypeScript', tags: ['language', 'client-side', 'scripting'] },
       { name: 'UX/UI', tags: ['design', 'technical'] },
       { name: 'Web design', tags: ['design', 'technical'] },
       { name: 'Wireframing', tags: ['design', 'technical'] },
       { name: 'WordPress', tags: ['cms'] },
-      { name: 'x86 assembly', tags: ['language', 'low-level'] },
+      { name: 'x86 assembly', tags: ['language', 'low-level'] }
     ]
 
     let skillsToDisplay = []
@@ -90,18 +104,16 @@ export default function Skills({ reference }) {
   }, [activeSkillTags])
 
   const skillTags = {
-    'client-side': { ref: useRef(), text: 'Client-side' },
-    cms: { ref: useRef(), text: 'CMS' },
+    'client-side': { ref: useRef(), text: 'Frontend' },
+    'server-side': { ref: useRef(), text: 'Backend' },
     data: { ref: useRef(), text: 'Data' },
     design: { ref: useRef(), text: 'Design' },
-    language: { ref: useRef(), text: 'Programming Language' },
-    'low-level': { ref: useRef(), text: 'Low-level' },
-    math: { ref: useRef(), text: 'Math' },
+    infrastructure: { ref: useRef(), text: 'Infrastructure' },
     mobile: { ref: useRef(), text: 'Mobile' },
-    scripting: { ref: useRef(), text: 'Scripting' },
-    'server-side': { ref: useRef(), text: 'Server-side' },
-    statistics: { ref: useRef(), text: 'Statistics' },
-    technical: { ref: useRef(), text: 'Technical' },
+    language: { ref: useRef(), text: 'Programming Language' },
+    technical: { ref: useRef(), text: 'General' },
+    'low-level': { ref: useRef(), text: 'Low-level' },
+    math: { ref: useRef(), text: 'Math' }
   }
 
   const handleFilter = key => () => {
