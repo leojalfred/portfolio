@@ -38,9 +38,9 @@
   "scripts": {
     "begin": "npm run build && npm run move",
     "build": "(if exist build rmdir /q /s build) && react-scripts build",
-    "deploy": "npm run begin && cd ../production && git add . && git commit -m \"Deploy\" && git push origin master",
-    "move": "(robocopy build ../production /s /purge /xf CNAME /xd .git) & exit 0",
-    "production": "npm run begin && http-server ../production",
+    "deploy": "npm run begin && cd ../leojalfred.github.io && git add . && git commit -m \"Deploy\" && git push origin master",
+    "move": "(robocopy build ../leojalfred.github.io /s /purge /xf CNAME /xd .git) & exit 0",
+    "production": "npm run begin && http-server ../leojalfred.github.io",
     "start": "react-scripts start",
     "tunnel": "ngrok http --host-header=rewrite 3000"
   },
