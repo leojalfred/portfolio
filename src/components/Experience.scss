@@ -39,6 +39,10 @@
         &:nth-of-type(4) .experience__date {
           @include diagonal-gradient($teal, $blue);
         }
+
+        &:nth-of-type(5) .experience__date {
+          @include diagonal-gradient($grape, $red);
+        }
       }
 
       > .experience__line {
@@ -52,6 +56,10 @@
 
         &:nth-of-type(3) {
           background-image: linear-gradient($blue, $teal);
+        }
+
+        &:nth-of-type(4) {
+          background-image: linear-gradient($red, $grape);
         }
       }
     }
